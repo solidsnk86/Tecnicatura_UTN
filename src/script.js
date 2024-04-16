@@ -96,4 +96,4 @@ document.addEventListener("DOMContentLoaded", () => {
   fetchData();
 });
 
-document.title = "Lector de archivos JS";
+document.title = "Lector de archivo TXT";

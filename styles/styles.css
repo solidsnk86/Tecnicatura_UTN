@@ -1,6 +1,10 @@
 :root {
-  --bg-dark: #0D1117;
-  --border-color: #333;
+  --bg-dark: #0d1117;
+  --bg-color-pre: #161b22;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -26,7 +30,7 @@ h2 {
 
 pre {
   padding: 10px;
-  background-color: #161B22;
+  background-color: var(--bg-color-pre);
   color: #ddd;
   text-wrap: balance;
 }
