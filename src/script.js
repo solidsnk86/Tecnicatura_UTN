@@ -21,7 +21,7 @@ function styleText(string) {
   return `<span style="background-color: #3A3F4B; padding: 2px; border-radius: 4px;">${string}</span>`;
 }
 
-$footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
+$footer.innerHTML = `${new Date().getFullYear()} & copyGabriel Calcagni`;
 
 function createList() {
   $pre.innerHTML = `
