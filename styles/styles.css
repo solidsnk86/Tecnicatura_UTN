@@ -31,6 +31,12 @@ pre {
   text-wrap: balance;
 }
 
+footer {
+  text-align: center;
+  color: #ddd;
+  font-size: 12px;
+}
+
 @media (width <= 400px) {
   body {
     width: 100%;

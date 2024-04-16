@@ -4,19 +4,24 @@ const $h1 = $("h1");
 const $h2 = $("h2");
 const $pre = $("#list");
 const $p = $("#description");
+const $footer = $("footer");
 const fileName = "historia.txt";
 const stylesData = [
   "background-color: #3163c66e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #666; font-family: system-ui; border-radius: 8px;",
 ];
-$h1.innerHTML = "Clase de Git Bash - UTNFRSR";
+$h1.innerHTML = "Clase de Git Bash • UTN-FRSR";
 $h2.innerHTML = "Historia de Git";
 $p.style.color = "#fff";
-$p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragmento es un fetch del archivo`;
+$p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragmento es un fetch del archivo ${styleText(
+  "historia.txt"
+)} el cual se puede editar y se verá reflejado el cambio aquí:`;
 $pre.style.color = "#fff";
 
 function styleText(string) {
-  string.style.background = ""
+  return `<span style="background-color: #3A3F4B; padding: 2px; border-radius: 4px;">${string}</span>`;
 }
+
+$footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
 
 function createList() {
   $pre.innerHTML = `
