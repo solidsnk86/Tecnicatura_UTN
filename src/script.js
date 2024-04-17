@@ -61,7 +61,7 @@ git merge <branch_name>
 <span style="color: gray;"># Actualizar el repositorio local con los cambios desde el repositorio remoto</span>
 git pull
 
-<span style="color: gray;"># Subir los cambios locales al repositorio remoto
+<span style="color: gray;"># Subir los cambios locales al repositorio remoto</span>
 git push
   </pre>  
   `;
