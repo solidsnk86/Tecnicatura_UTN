@@ -27,41 +27,41 @@ function createList() {
   $pre.innerHTML = `
   <li>Comandos básicos de Git Bash</li>
   <pre>
-# Inicializar un nuevo repositorio Git en un directorio existente
+<span style="color: gray;"># Inicializar un nuevo repositorio Git en un directorio existente</span>
 git init
 
-# Clonar un repositorio Git existente desde una URL remota
-git clone <URL>
+<span style="color: gray;"># Clonar un repositorio Git existente desde una URL remota</span>
+git clone "URL"
 
-# Agregar archivos al área de preparación para su posterior confirmación
-git add <file>
+<span style="color: gray;"># Agregar archivos al área de preparación para su posterior confirmación</span>
+git add "file"
 
-# Confirmar los cambios en el repositorio con un mensaje descriptivo
+<span style="color: gray;"># Confirmar los cambios en el repositorio con un mensaje descriptivo</span>
 git commit -m "Mensaje de confirmación"
 
-# Configurar nuestras credenciales en git
+<span style="color: gray;"># Configurar nuestras credenciales en git</span>
 git config user.email "micorreo-electronico@mail.com"
 git config user.name "Mi Nombre"
 
-# Ver el estado actual del repositorio, incluyendo archivos sin seguimiento, modificados y en el área de preparación
+<span style="color: gray;"># Ver el estado actual del repositorio, incluyendo archivos sin seguimiento, modificados y en el área de preparación</span>
 git status
 
-# Ver un registro de cambios y confirmaciones en el repositorio
+<span style="color: gray;"># Ver un registro de cambios y confirmaciones en el repositorio</span>
 git log
 
-# Crear una nueva rama para trabajar en paralelo con la rama actual
+<span style="color: gray;"># Crear una nueva rama para trabajar en paralelo con la rama actual</span>
 git branch <branch_name>
 
-# Cambiar a una rama específica
+<span style="color: gray;"># Cambiar a una rama específica</span>
 git checkout <branch_name>
 
-# Fusionar una rama específica en la rama actual
+<span style="color: gray;"># Fusionar una rama específica en la rama actual</span>
 git merge <branch_name>
 
-# Actualizar el repositorio local con los cambios desde el repositorio remoto
+<span style="color: gray;"># Actualizar el repositorio local con los cambios desde el repositorio remoto</span>
 git pull
 
-# Subir los cambios locales al repositorio remoto
+<span style="color: gray;"># Subir los cambios locales al repositorio remoto
 git push
   </pre>  
   `;

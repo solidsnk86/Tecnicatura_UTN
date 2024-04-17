@@ -32,9 +32,10 @@ h2 {
 pre {
   padding: 10px;
   background-color: var(--bg-color-pre);
-  color: #ddd;
+  color: #fff;
   text-wrap: balance;
 }
+
 
 footer {
   text-align: center;
