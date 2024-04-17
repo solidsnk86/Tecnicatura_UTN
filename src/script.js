@@ -27,43 +27,43 @@ function createList() {
   $pre.innerHTML = `
   <li>Comandos básicos de Git Bash</li>
   <pre>
-<span style="color: gray;"># Inicializar un nuevo repositorio Git en un directorio existente</span>
-git init
-
-<span style="color: gray;"># Clonar un repositorio Git existente desde una URL remota</span>
-git clone "URL"
-
-<span style="color: gray;"># Agregar archivos al área de preparación para su posterior confirmación</span>
-git add "file"
-
-<span style="color: gray;"># Confirmar los cambios en el repositorio con un mensaje descriptivo</span>
-git commit -m "Mensaje de confirmación"
-
-<span style="color: gray;"># Configurar nuestras credenciales en git</span>
-git config user.email "micorreo-electronico@mail.com"
-git config user.name "Mi Nombre"
-
-<span style="color: gray;"># Ver el estado actual del repositorio, incluyendo archivos sin seguimiento, modificados y en el área de preparación</span>
-git status
-
-<span style="color: gray;"># Ver un registro de cambios y confirmaciones en el repositorio</span>
-git log
-
-<span style="color: gray;"># Crear una nueva rama para trabajar en paralelo con la rama actual</span>
-git branch <branch_name>
-
-<span style="color: gray;"># Cambiar a una rama específica</span>
-git checkout <branch_name>
-
-<span style="color: gray;"># Fusionar una rama específica en la rama actual</span>
-git merge <branch_name>
-
-<span style="color: gray;"># Actualizar el repositorio local con los cambios desde el repositorio remoto</span>
-git pull
-
-<span style="color: gray;"># Subir los cambios locales al repositorio remoto</span>
-git push
-  </pre>  
+    <span style="color: gray;"># Inicializar un nuevo repositorio Git en un directorio existente</span>
+    git init
+  
+    <span style="color: gray;"># Clonar un repositorio Git existente desde una URL remota</span>
+    git clone "URL"
+  
+    <span style="color: gray;"># Agregar archivos al área de preparación para su posterior confirmación</span>
+    git add "file"
+  
+    <span style="color: gray;"># Confirmar los cambios en el repositorio con un mensaje descriptivo</span>
+    git commit -m "Mensaje de confirmación"
+  
+    <span style="color: gray;"># Configurar nuestras credenciales en git</span>
+    git config user.email "micorreo-electronico@mail.com"
+    git config user.name "Mi Nombre"
+  
+    <span style="color: gray;"># Ver el estado actual del repositorio, incluyendo archivos sin seguimiento, modificados y en el área de preparación</span>
+    git status
+  
+    <span style="color: gray;"># Ver un registro de cambios y confirmaciones en el repositorio</span>
+    git log
+  
+    <span style="color: gray;"># Crear una nueva rama para trabajar en paralelo con la rama actual</span>
+    git branch <branch_name>
+  
+    <span style="color: gray;"># Cambiar a una rama específica</span>
+    git checkout <branch_name>
+  
+    <span style="color: gray;"># Fusionar una rama específica en la rama actual</span>
+    git merge <branch_name>
+  
+    <span style="color: gray;"># Actualizar el repositorio local con los cambios desde el repositorio remoto</span>
+    git pull
+  
+    <span style="color: gray;"># Subir los cambios locales al repositorio remoto</span>
+    git push
+  </pre>   
   `;
 }
 
