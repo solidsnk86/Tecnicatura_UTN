@@ -29,13 +29,17 @@ h2 {
   color: #fff;
 }
 
+div {
+  overflow-x: hidden;
+}
+
 pre {
   padding: 10px;
   background-color: var(--bg-color-pre);
   color: #fff;
   text-wrap: balance;
+  overflow-x: auto;
 }
-
 
 footer {
   text-align: center;
