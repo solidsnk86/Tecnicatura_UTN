@@ -33,6 +33,33 @@ div {
   overflow-x: hidden;
 }
 
+ol {
+  counter-reset: item;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 15px;
+  list-style-type: none;
+  position: relative;
+}
+
+li:before {
+  content: counter(item) ".";
+  counter-increment: item;
+  position: absolute;
+  left: -22px;
+  color: lightskyblue;
+  font-weight: 500;
+}
+
+.section-title {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 1em;
+  text-decoration:underline lightskyblue;
+}
+
 pre {
   padding: 10px;
   background-color: var(--bg-color-pre);

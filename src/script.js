@@ -7,7 +7,7 @@ const $p = $("#description");
 const $footer = $("footer");
 const fileName = "historia.txt";
 const stylesData = [
-  "background-color: #3163c66e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #666; font-family: system-ui; border-radius: 8px; overflow: auto;",
+  "background-color: #3163c66e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
 $h1.innerHTML = "Clase de Git Bash • UTN-FRSR";
 $h2.innerHTML = "Historia de Git";
@@ -25,7 +25,7 @@ $footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
 
 function createList() {
   $pre.innerHTML = `
-  <li>Comandos básicos de Git Bash</li>
+  <p>Comandos básicos de Git Bash:</p>
 <pre>
 <span style="color: gray;"># Inicializar un nuevo repositorio Git en un directorio existente</span>
 git init
@@ -83,16 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchData = async () => {
     const response = await fetch(fileName);
     if (!response.ok) {
-      throw new Error("Error al cargar el archivo.");
+      throw new Error("Error al cargar el archivo txt 😅.");
     }
     const file = await response.text();
-    reader.readAsText(new Blob([file], { type: "text/plain" }));
+    reader.readAsText(new Blob([file], { type: "text/html" }));
   };
 
   const createHTML = (data) => {
     $body.innerHTML = `
-      <div>
-        <p style="${stylesData.join()}">${data}</p>
+      <div style="${stylesData.join()}">
+        <p>${data}</p>
       </div>
     `;
   };
