@@ -7,7 +7,7 @@ const $p = $("#description");
 const $footer = $("footer");
 const fileName = "historia.txt";
 const stylesData = [
-  "background-color: #3163c66e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
+  "background-color: #4071d36e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
 $h1.innerHTML = "Clase de Git Bash • UTN-FRSR";
 $h2.innerHTML = "Historia de Git";
