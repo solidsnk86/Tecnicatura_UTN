@@ -63,6 +63,10 @@ function createList() {
   
     <span style="color: gray;"># Subir los cambios locales al repositorio remoto</span>
     git push
+
+    <span style="color: gray;"># Este comando realiza dos acciones en una sola línea</span>
+    <span style="color: gray;"># Agrega los archivos modificados y/o eliminados y crea un commit</span>
+    git commit -am "Mensaje del commit"
   </pre>   
   `;
 }
