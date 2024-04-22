@@ -1,43 +1,43 @@
  <ol>
     <li>
       <div class="section-title">Orígenes en Linux:</div>
-      <div>
+      <p>
         La historia de Git comienza con Linus Torvalds, el creador del kernel de Linux. En 2005, Torvalds enfrentó desafíos con el sistema de control de versiones que estaba utilizando para el desarrollo de Linux, llamado BitKeeper, el cual dejó de ofrecerse gratuitamente. Ante esta situación, Linus decidió crear su propio sistema de control de versiones distribuido.
-      </div>
+      </p>
     </li>
 
     <li>
       <div class="section-title">Nacimiento de Git:</div>
-      <div>
+      <p>
         En abril de 2005, Linus Torvalds anunció públicamente el proyecto Git como una alternativa al uso de BitKeeper. Git fue diseñado desde cero con un enfoque en la velocidad, la eficiencia y la capacidad de trabajar de manera distribuida. En solo unas pocas semanas, Linus había desarrollado la primera versión de Git.
-      </div>
+      </p>
     </li>
 
     <li>
       <div class="section-title">Adopción y popularización:</div>
-      <div>
+      <p>
         Git rápidamente ganó popularidad entre la comunidad de desarrollo de software debido a su diseño robusto y su capacidad para manejar grandes proyectos de código abierto. A medida que más proyectos comenzaron a adoptar Git como su sistema de control de versiones, su uso se extendió más allá de Linux.
-      </div>
+      </p>
     </li>
 
     <li>
       <div class="section-title">GitHub:</div>
-      <div>
+      <p>
         En 2008, GitHub fue lanzado como una plataforma de alojamiento de repositorios Git, permitiendo a los desarrolladores colaborar en proyectos de código abierto de manera más fácil y eficiente. GitHub se convirtió rápidamente en el epicentro de la comunidad de desarrollo de software y desempeñó un papel fundamental en la popularización de Git.
-      </div>
+      </p>
     </li>
 
     <li>
       <div class="section-title">Adopción en la industria:</div>
-      <div>
+      <p>
         A medida que GitHub creció en popularidad, Git se convirtió en el estándar de facto para el control de versiones en la industria del desarrollo de software. Grandes empresas, startups y proyectos de código abierto comenzaron a adoptar Git como su principal herramienta de colaboración.
-      </div>
+      </p>
     </li>
 
     <li>
       <div class="section-title">Evolución continua:</div>
-      <div>
+      <p>
         Desde su creación, Git ha seguido evolucionando con nuevas características y mejoras, gracias a la contribución de una activa comunidad de desarrolladores de todo el mundo. Actualmente, Git es utilizado por millones de desarrolladores en una amplia variedad de proyectos, desde pequeñas aplicaciones hasta sistemas operativos completos.
-      </div>
+      </p>
     </li>
   </ol>
