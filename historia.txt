@@ -1,4 +1,4 @@
-Orígenes en Linux La historia de Git comienza con Linus Torvalds, el creador del kernel de Linux. En 2005, Torvalds enfrentó desafíos con el sistema de control de versiones que estaba utilizando para el desarrollo de Linux, llamado BitKeeper, el cual dejó de ofrecerse gratuitamente. Ante esta situación, Linus decidió crear su propio sistema de control de versiones distribuido.
+Orígenes en Linux, la historia de Git comienza con Linus Torvalds, el creador del kernel de Linux. En 2005, Torvalds enfrentó desafíos con el sistema de control de versiones que estaba utilizando para el desarrollo de Linux, llamado BitKeeper, el cual dejó de ofrecerse gratuitamente. Ante esta situación, Linus decidió crear su propio sistema de control de versiones distribuido.
 
 Nacimiento de Git En abril de 2005, Linus Torvalds anunció públicamente el proyecto Git como una alternativa al uso de BitKeeper. Git fue diseñado desde cero con un enfoque en la velocidad, la eficiencia y la capacidad de trabajar de manera distribuida. En solo unas pocas semanas, Linus había desarrollado la primera versión de Git.
 
@@ -8,4 +8,4 @@ GitHub En 2008, GitHub fue lanzado como una plataforma de alojamiento de reposit
 
 Adopción en la industria A medida que GitHub creció en popularidad, Git se convirtió en el estándar de facto para el control de versiones en la industria del desarrollo de software. Grandes empresas, startups y proyectos de código abierto comenzaron a adoptar Git como su principal herramienta de colaboración.
 
-Evolución continua Desde su creación, Git ha seguido evolucionando con nuevas características y mejoras, gracias a la contribución de una activa comunidad de desarrolladores de todo el mundo. Actualmente, Git es utilizado por millones de desarrolladores en una amplia variedad de proyectos, desde pequeñas aplicaciones hasta sistemas operativos completos.
+Evolución continua desde su creación, Git ha seguido evolucionando con nuevas características y mejoras, gracias a la contribución de una activa comunidad de desarrolladores de todo el mundo. Actualmente, Git es utilizado por millones de desarrolladores en una amplia variedad de proyectos, desde pequeñas aplicaciones hasta sistemas operativos completos.
