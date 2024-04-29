@@ -41,7 +41,3 @@
       </p>
     </li>
   </ol>
-
-  <div class="footer-txt">
-  <span class="update"><span>
-  </div>

@@ -67,7 +67,22 @@ git push
 <span style="color: gray;"># Este comando realiza dos acciones en una sola línea</span>
 <span style="color: gray;"># Agrega los archivos modificados y/o eliminados y crea un commit</span>
 git commit -am "Mensaje del commit"
-</pre>   
+
+<span style="color: gray;"># Este comando permite agregar o arreglar el mensaje de un commit</span>
+git commit -amend -m "Mensaje del commit"
+
+<span style="color: gray;"># Este comando permite deshacer tu último commit</span>
+<span style="color: gray;"># y el parámetro --soft mantiene los cambios en local</span>
+git reset --soft HEAD~1
+
+<span style="color: gray;"># Este comando permite deshacer tu último commit</span>
+<span style="color: gray;"># y el parámetro --hard para borrarlos del todo</span>
+git reset --hard HEAD~1
+
+<span style="color: gray;"># Si has hecho un push al repositorio tiene arreglo</span>
+<span style="color: gray;"># hacemos un <b style="color: lightgreen">git log --oneline</b> para buscar el id del commit</span>
+git revert "identificador del commit" ej: b3be3e0369
+</pre> 
   `;
 }
 
@@ -92,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const createHTML = (data) => {
     $body.innerHTML = `
       <div style="${stylesData.join()}">
-        <p>${data}</p>
+        ${data}
       </div>
     `;
   };
