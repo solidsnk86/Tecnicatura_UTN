@@ -8,5 +8,5 @@
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
   "editor.experimental.asyncTokenization": true,
-  "python.analysis.autoFormatStrings": true
+  "python.analysis.autoFormatStrings": true,
 }
