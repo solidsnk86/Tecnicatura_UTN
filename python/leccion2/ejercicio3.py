@@ -3,9 +3,9 @@
 # Pedir la edad al usuario
 edad_usuario = int(input("Ingrese su edad: "))
 
-# Comprobar si la edad está entre 20 y 30 años (sin incluir 30)
+# Comprobar si la edad está entre 20 y 30 años
 edad_20 = 20 <= edad_usuario < 30
-# Comprobar si la edad está entre 30 y 40 años (sin incluir 40)
+# Comprobar si la edad está entre 30 y 40 años
 edad_30 = 30 <= edad_usuario < 40
 
 # Imprimir resultados intermedios
