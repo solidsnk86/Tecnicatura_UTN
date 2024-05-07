@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchData = async () => {
     const response = await fetch(fileName);
     if (!response.ok) {
-      throw new Error("Error al cargar el archivo txt 😅.");
+      throw new Error("Error al cargar el archivo txt 😅.", fileName);
     }
     const file = await response.text();
     reader.readAsText(new Blob([file], { type: "text/html" }));

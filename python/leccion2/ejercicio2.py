@@ -7,7 +7,8 @@
 vacaciones = True
 dia_libre = True
 
+# 
 if not (vacaciones or dia_libre):
-    print("El viejo tiene trabajo que hacer!")
+    print("El tiene trabajo que hacer!")
 else:
-    print("El papá puede asistir al juego.")
+    print("El puede asistir al juego.")
