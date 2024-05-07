@@ -25,7 +25,7 @@ $footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
 
 function createList() {
   $pre.innerHTML = `
-  <p>Comandos básicos de Git Bash:</p>
+  <p>Comandos de Git Bash:</p>
 <pre>
 <span style="color: gray;"># Inicializar un nuevo repositorio Git en un directorio existente</span>
 git init
