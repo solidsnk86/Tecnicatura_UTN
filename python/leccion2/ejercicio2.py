@@ -4,7 +4,7 @@
 # Verificamos si tiene el día libre​
 # Usar estructura ‘if else’ con el operador or​
 
-vacaciones = True
+vacaciones = "21 de Diciembre"
 dia_libre = True
 
 # 
