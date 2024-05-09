@@ -1,0 +1,43 @@
+body {
+  background: linear-gradient(to bottom, #222, #333);
+  height: 100vh;
+}
+
+main {
+  width: 50%;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+form {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+table {
+    width: 100%;
+}
+
+label {
+  display: grid;
+}
+
+button {
+  justify-self: left;
+}
+
+label,
+th,
+td {
+  color: #fff;
+}
+
+#nombre,
+#apellido,
+#edad,
+#facultad {
+  height: 20px;
+}
