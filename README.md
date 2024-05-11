@@ -2,8 +2,6 @@
 
 **Profesor Ariel Betancud**
 
-Hola soy Juan Pi
-
 Este repositorio se creó con fines educativos para aprender sobre Git Bash y sus comandos. Fue creado durante la clase de Programación I con el profesor <a href="https://github.com/ArielBetancud22">Ariel</a>.
 
 Tiene un lector de archivos `.txt` con Javascript Vanilla utilizando la función `FileReader` y luego se
