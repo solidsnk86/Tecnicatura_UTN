@@ -2,7 +2,7 @@
 
 **Profesor Ariel Betancud**
 
-Hola soy Goku!
+Hola soy Juan Pi
 
 Este repositorio se creó con fines educativos para aprender sobre Git Bash y sus comandos. Fue creado durante la clase de Programación I con el profesor <a href="https://github.com/ArielBetancud22">Ariel</a>.
 
