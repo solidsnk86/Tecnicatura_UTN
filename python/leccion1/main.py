@@ -95,7 +95,7 @@ print(mi_variable_3)
 # Operadores de reasignación
 mi_variable_3 = mi_variable_3 + 1
 print(mi_variable_3)
-
+# Sintaxis reducida de Python
 mi_variable_3 += 1
 print(mi_variable_3)
 
@@ -103,3 +103,10 @@ print(mi_variable_3)
 mi_variable_3 -= 2
 print(mi_variable_3)
 
+# Mi mi_variable_3 = mi_variable_3 * 2
+mi_variable_3 *= 3
+print(mi_variable_3)
+
+# Mi mi_variable_3 = mi_variable_3 / 2
+mi_variable_3 /= 2
+print(mi_variable_3)
