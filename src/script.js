@@ -42,6 +42,9 @@ git commit -m "Mensaje de confirmación"
 <span style="color: gray;"># Configurar nuestras credenciales en git</span>
 git config user.email "micorreo-electronico@mail.com"
 git config user.name "Mi Nombre"
+
+<span style="color: gray;"># Esto agregará un nuevo control remoto con el nombre especificado en lugar de "origin".</span>
+git remote add nombre_deseado URL_del_repositorio_remoto
   
 <span style="color: gray;"># Ver el estado actual del repositorio, incluyendo archivos sin seguimiento, modificados y en el área de preparación</span>
 git status

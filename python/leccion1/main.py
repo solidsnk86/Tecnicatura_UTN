@@ -88,7 +88,7 @@ perimetro = (alto + ancho) * 2
 print("Área:", area)
 print("Perímetro:", perimetro)
 '''
-
+"""
 mi_variable_3 = 10
 print(mi_variable_3)
 
@@ -110,3 +110,38 @@ print(mi_variable_3)
 # Mi mi_variable_3 = mi_variable_3 / 2
 mi_variable_3 /= 2
 print(mi_variable_3)
+
+# Operadores de comparación
+
+d = 4
+b = 2
+resultado = (d == b)
+print(resultado)
+
+# Operador diferente
+resultado = d != b
+print(resultado)
+
+# Operador Mayor que
+resultado = d > b
+print(resultado)
+
+# Operador Menor que
+resultado = d < b
+print(resultado)
+
+# Operador Menor o Igual que
+resultado = d <= b
+print(resultado)
+
+# Operador Mayor o Igual que
+resultado = d >= b
+print(resultado)
+"""
+
+a = int(input("Dgite un número: "))
+print(f"El residuo de la división es: {a % 2}")
+if a % 2 == 0:
+    print(f"El valor de a es {a}: es un npumero PAR.")
+else:
+    print(f"El valor de a es {a}: es número IMPAR.")

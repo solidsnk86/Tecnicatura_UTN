@@ -85,11 +85,25 @@ git log --stat
 # Mostrar la diferencia entre dos ramas
 git diff <branch_name1>..<branch_name2>
 
+# Eliminar una rama en git
+git branch -d <nombre_de_la_rama>
+
+# Si necesitas eliminar la rama de todas formas, incluso si no está completamente fusionada,
+# puedes usar -D:
+# La opción -D es más agresiva y forzará la eliminación, incluso si hay trabajo sin fusionar.
+git branch -D <nombre_de_la_rama>
+
 # Aplicar un parche desde un archivo o una URL
 git apply <patch_file>
 
 # Mostrar un resumen de las confirmaciones realizadas por cada colaborador
 git shortlog
+
+# Esto agregará un nuevo control remoto con el nombre especificado en lugar de "origin".</span>
+git remote add nombre_deseado URL_del_repositorio_remoto
+
+# Actualizar la URL del control remoto existente llamado "origin" con la nueva URL especificada.
+git remote set-url origin nueva_URL
 
 # Este comando realiza dos acciones en una sola línea:
 # -a: Agrega todos los archivos modificados y eliminados al área de preparación (staging area).
