@@ -2,13 +2,13 @@
 
 **Profesor Ariel Betancud**
 
-Este repositorio se creó con fines educativos para aprender sobre Git Bash y sus comandos. Fue creado durante la clase de Programación I con el profesor <a href="https://github.com/ArielBetancud22">Ariel</a>.
+Este repositorio se creó con fines educativos para aprender sobre Git Bash y sus comandos. Fue creado durante la clase de Programación I con el profesor <a style="color: cornflowerblue" href="https://github.com/ArielBetancud22">Ariel Betancud</a>.
 
 Tiene un lector de archivos `.txt` con Javascript Vanilla utilizando la función `FileReader` y luego se
 hace un `fetch` del archivo al _root_ del HTML.
 Contiene estilado en CSS.
 
-Vista del sitio: [https://solidsnk86.github.io/class-git/](https://solidsnk86.github.io/class-git/)
+Vista del sitio: <a style="color: cornflowerblue" href="https://solidsnk86.github.io/class-git/">https://solidsnk86.github.io/class-git/</a>
 
 Aquí algunos comandos:
 

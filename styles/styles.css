@@ -72,6 +72,24 @@ pre {
   overflow-x: auto;
 }
 
+#description2 {
+  color: #fff;
+}
+
+.txt02 {
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 0 auto 10px;
+  border: 1px solid #555;
+  border-radius: 8px;
+}
+
+.txt02 p {
+  color: #000;
+  margin: 5px 0;
+  font-family: 'Consolas';
+}
+
 footer {
   padding-block: 10px;
   text-align: center;
