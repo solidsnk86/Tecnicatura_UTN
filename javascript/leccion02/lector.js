@@ -17,11 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const fetchArchivo = async () => {
     const respuesta = await fetch(archivoTXT);
     const txt = await respuesta.text();
-    return crearHTML(txt);
+    return crearHTML(txt.replace(/\n/g, "<br>"));
   };
-
-  const formatearTXT = () => {
-    
-  }
   fetchArchivo()
 });
