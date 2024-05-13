@@ -58,5 +58,5 @@ console.log(autos);
 console.log(typeof autos); // Preguntamos que tipo de datos es:
 
 var z = "";
-console.log(z); // Empty string (cadena vacía)
+console.log(z); // Empty string = (cadena vacía)
 console.log(typeof z);
