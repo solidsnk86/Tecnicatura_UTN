@@ -1,4 +1,4 @@
-let myArray = ["h", "o", "l", "a", "m", "u", "n", "d", "o"];
+let miArray = ["h", "o", "l", "a", "m", "u", "n", "d", "o"];
 
 function mixArray(num) {
   for (let i = num.length - 1; i > 0; i--) {
@@ -8,11 +8,9 @@ function mixArray(num) {
   return num;
 }
 
-const mixedArray = mixArray([...myArray]);
-
-if (mixedArray) {
-  document.write(myArray.join(" ").toUpperCase());
-  document.writeln("<p>" + mixedArray.join(" ") + "</p>");
-
-  const miNimbre = () => {};
+const arrayMezclado = mixArray([...miArray]);
+console.log(mixArray);
+if (arrayMezclado) {
+  document.write(miArray.join(" ").toUpperCase());
+  document.writeln("<p>" + arrayMezclado.join(" ") + "</p>");
 }
