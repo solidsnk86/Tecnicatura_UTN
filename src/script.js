@@ -5,11 +5,11 @@ const $h1 = $("h1");
 const $h2 = $("h2");
 const $pre = $("#list");
 const $p = $("#description");
-const $p2 = $("#description2")
+const $p2 = $("#description2");
 const $footer = $("footer");
 const fileName = "historia.txt";
-const archivoTXT = "/javascript/Sintáxis JS y Java.txt";
-const readmeMD = "/README.md";
+const archivoTXT = "javascript/Sintáxis JS y Java.txt";
+const readmeMD = "README.md";
 const stylesData = [
   "background-color: #4071d36e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
@@ -20,7 +20,7 @@ $p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragm
   "historia.txt"
 )} el cual se puede editar y se verá reflejado el cambio aquí:`;
 $pre.style.color = "#fff";
-$p2.innerHTML = "Archivo TXT (Sintáxis JS y Java)"
+$p2.innerHTML = "Archivo TXT (Sintáxis JS y Java)";
 
 function styleText(string) {
   return `<span style="background-color: #3A3F4B; padding: 2px; border-radius: 4px;">${string}</span>`;
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const leerReadmeMD = async () => {
     const respuesta = await fetch(readmeMD);
     const md = await respuesta.text();
-    return crearLista(md)
+    return crearLista(md);
   };
 
   leerTXT01();
