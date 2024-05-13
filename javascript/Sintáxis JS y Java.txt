@@ -1,4 +1,5 @@
 Sintáxis similares entre Java y JavaScript
+
 Operadores Simplificados:
 +=
 -=

@@ -1,9 +1,11 @@
 const $body = document.body;
 const archivoTXT = "/javascript/Sintáxis JS y Java.txt";
-$body.style.width = "50%"
-$body.style.justifyContent = "center"
-$body.style.margin = "0 auto"
-$body.style.textWrap = "balance"
+$body.style.background = "#21252B";
+$body.style.color = "#fff";
+$body.style.width = "50%";
+$body.style.justifyContent = "center";
+$body.style.margin = "0 auto";
+$body.style.textWrap = "balance";
 
 function crearHTML(datos) {
   $body.innerHTML = `
@@ -14,10 +16,11 @@ function crearHTML(datos) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  const fetchArchivo = async () => {
+  const leerArchivo = async () => {
     const respuesta = await fetch(archivoTXT);
     const txt = await respuesta.text();
-    return crearHTML(txt.replace(/\n/g, "<br>"));
+    const formatedTXT = txt.replace(/\n/g, "<br>");
+    return crearHTML(formatedTXT);
   };
-  fetchArchivo()
+  leerArchivo();
 });
