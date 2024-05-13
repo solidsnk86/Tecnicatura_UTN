@@ -8,8 +8,6 @@ const $p = $("#description");
 const $p2 = $("#description2");
 const $footer = $("footer");
 const fileName = "historia.txt";
-const archivoTXT = "javascript/Sintáxis JS y Java.txt";
-const readmeMD = "README.md";
 const stylesData = [
   "background-color: #4071d36e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
@@ -56,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const leerTXT02 = async () => {
-    const respuesta = await fetch(archivoTXT);
+    const respuesta = await fetch("/javascript/Sintáxis JS y Java.txt");
     const txt = await respuesta.text();
     const formatedTXT = txt.replace(/\n/g, "<br>");
     return createHTML02(formatedTXT);
@@ -80,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const leerReadmeMD = async () => {
-    const respuesta = await fetch(readmeMD);
+    const respuesta = await fetch("/README.md");
     const md = await respuesta.text();
     return crearLista(md);
   };
