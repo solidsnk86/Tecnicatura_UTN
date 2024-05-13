@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const respuesta = await fetch("javascript/Sintáxis JS y Java.txt");
     const txt = await respuesta.text();
     const formatedTXT = txt.replace(/\n/g, "<br>");
+    console.log(formatedTXT);
     return createHTML02(formatedTXT);
   };
 
@@ -80,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const leerReadmeMD = async () => {
     const respuesta = await fetch("README.md");
     const md = await respuesta.text();
+    console.log(md);
     return crearLista(md);
   };
 
