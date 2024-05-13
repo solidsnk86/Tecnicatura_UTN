@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   const leerReadmeMD = async () => {
-    const respuesta = await fetch("/README.md");
+    const respuesta = await fetch("README.md");
     const md = await respuesta.text();
     return crearLista(md);
   };
