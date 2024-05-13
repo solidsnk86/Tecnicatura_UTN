@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const leerTXT02 = async () => {
-    const respuesta = await fetch("/javascript/Sintáxis JS y Java.txt");
+    const respuesta = await fetch("javascript/Sintáxis JS y Java.txt");
     const txt = await respuesta.text();
     const formatedTXT = txt.replace(/\n/g, "<br>");
     return createHTML02(formatedTXT);
