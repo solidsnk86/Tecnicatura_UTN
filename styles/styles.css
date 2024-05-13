@@ -99,7 +99,6 @@ footer {
 
 @media (min-width: 400px) {
   body {
-    width: 100%;
-    padding: 10px;
+    width: 90%;
   }
 }
