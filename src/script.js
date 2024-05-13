@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
   reader.onload = async () => {
     const data = await reader.result;
     createHTML01(data);
-    createHTML02();
+    await leerTXT02();
   };
 
   const leerTXT01 = async () => {
@@ -44,19 +44,22 @@ document.addEventListener("DOMContentLoaded", () => {
     reader.readAsText(new Blob([file], { type: "text/html" }));
   };
 
+  const leerTXT02 = async () => {
+    const respuesta = await fetch("javascript/Sintáxis JS y Java.txt");
+    if (!respuesta.ok) {
+      console.log("Error al cargar el archivo txt");
+    }
+    const txt = await respuesta.text();
+    const formatedTXT = txt.replace(/\n/g, "<br>");
+    return createHTML02(formatedTXT);
+  };
+
   const createHTML01 = (data) => {
     $body.innerHTML = `
       <div style="${stylesData.join()}">
         ${data}
       </div>
     `;
-  };
-
-  const leerTXT02 = async () => {
-    const respuesta = await fetch("javascript/Sintáxis JS y Java.txt");
-    const txt = await respuesta.text();
-    const formatedTXT = txt.replace(/\n/g, "<br>");
-    return createHTML02(formatedTXT);
   };
 
   function createHTML02(datos) {
