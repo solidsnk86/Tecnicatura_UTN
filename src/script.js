@@ -21,7 +21,7 @@ $pre.style.color = "#fff";
 $p2.innerHTML = "Archivo TXT (Sintáxis JS y Java)";
 
 function styleText(string) {
-  return `<span style="background-color: #3A3F4B; padding: 2px; border-radius: 4px;">${string}</span>`;
+  return `<span style="background-color: #3A3F4B; padding-inline: 2px; border-radius: 4px;">${string}</span>`;
 }
 
 $footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   reader.onload = async () => {
     const data = await reader.result;
-    crearLista();
     createHTML01(data);
     createHTML02();
   };
@@ -68,24 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function crearLista(md) {
-    $pre.innerHTML = `
-    <p>Comandos de Git Bash:</p>
-    <pre>
-      <code lang="markdown">${md}</code>
-    </pre> 
-    `;
-  }
-
-  const leerReadmeMD = async () => {
-    const respuesta = await fetch("README.md");
-    const md = await respuesta.text();
-    return crearLista(md);
-  };
-
   leerTXT01();
   leerTXT02();
-  leerReadmeMD();
 });
 
 document.title = "Lector de archivo TXT";

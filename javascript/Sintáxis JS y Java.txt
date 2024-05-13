@@ -32,6 +32,7 @@ Secuencias de Escape:
 \t = Tabulación
 \b = Retroceso
 \f = Salto de páginia
+\g = Escape global para expresiones regulares
 
 Operador de Aumento:
 ++
