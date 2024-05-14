@@ -21,3 +21,8 @@ else:
     print("Número fuera de rango")
     
 print(f"El número ingresado es {numero} @ {texto}")"""
+
+# Ternaria
+
+condicion = False
+print("Condición Verdadera") if condicion else print("Condición Falsa")
