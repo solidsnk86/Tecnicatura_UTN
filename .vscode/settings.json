@@ -7,7 +7,6 @@
   "editor.guides.bracketPairs": true,
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
-  "editor.experimental.asyncTokenization": true,
   "python.analysis.autoFormatStrings": true,
   "liveServer.settings.port": 5501
 }
