@@ -8,5 +8,7 @@ radio = float(input("Ingrese el radio del círculo: "))
 area = pi * radio ** 2
 longitud = 2 * pi * radio
 
-print(f"El área del círculo es: {area}")
-print(f"La longitud de la circunferencia es: {longitud}")
+print(f'''
+      El área es: {area}
+      La longitud es: {longitud}
+      ''')

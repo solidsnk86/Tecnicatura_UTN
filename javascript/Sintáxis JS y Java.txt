@@ -40,4 +40,13 @@ Operador de Aumento:
 Operador de Descuento:
 --
 
+Operador de Aumento
+++
+Ej: let z= ++a: //Preincremento
+Ej: z=a++; //PosIncremento
+
+Operador de Decremento
+--
+Ej: let z=--a; //Predecremento
+let z=a--; //Posdrecemento
 
