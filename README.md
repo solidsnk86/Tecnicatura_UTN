@@ -73,9 +73,6 @@ git checkout -- <file_name>
 # Ver una lista detallada de los cambios realizados en un archivo
 git log -p <file_name>
 
-# Crear una nueva rama y cambiar a ella en un solo comando
-git checkout -b <branch_name>
-
 # Cambiar de rama conservando los cambios sin confirmar en el directorio de trabajo
 git checkout -m <branch_name>
 
