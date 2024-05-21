@@ -24,7 +24,7 @@ function styleText(string) {
   return `<span style="background-color: #3A3F4B; padding-inline: 2px; border-radius: 4px;">${string}</span>`;
 }
 
-$footer.innerHTML = `${new Date().getFullYear()} &copyGabriel Calcagni`;
+$footer.innerHTML = `${new Date().getFullYear()} &copyCalcagni Gabriel`;
 
 document.addEventListener("DOMContentLoaded", () => {
   const reader = new FileReader();
