@@ -1,7 +1,4 @@
-from datetime import date
-
 mes = int(input("Ingrese un mes del año (1-12): "))
-mes_disponible = date.month
 
 if mes == 12 or mes == 1 or mes == 2:
     print("Usted se encuantra en Verano")
@@ -12,4 +9,4 @@ elif mes == 6 or mes == 7 or mes == 8:
 elif mes == 9 or mes == 10 or mes == 11:
     print("Usted se encuentra en Primavera")
 else:
-    print(f"Usted ha ingresado {mes}: NO ES VÁLIDO {mes} como mes (1 - 12 VÁLIDO)")
+    print(f"Usted ha ingresado {mes}: NO ES VÁLIDO")
