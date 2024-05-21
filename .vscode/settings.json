@@ -9,5 +9,9 @@
   "editor.stickyScroll.enabled": true,
   "python.analysis.autoFormatStrings": true,
   "liveServer.settings.port": 5501,
-  "editor.fontLigatures": true
+  "editor.fontLigatures": true,
+  "java.format.enabled": true,
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java"
+  }
 }

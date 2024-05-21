@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "EjercicioLibro",
+      "request": "launch",
+      "mainClass": "EjercicioLibro",
+      "projectName": "class-git_1721a834"
+    },
+    {
+      "type": "java",
       "name": "HolaMundo",
       "request": "launch",
       "mainClass": "HolaMundo",
