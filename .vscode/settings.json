@@ -8,5 +8,6 @@
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
   "python.analysis.autoFormatStrings": true,
-  "liveServer.settings.port": 5501
+  "liveServer.settings.port": 5501,
+  "editor.fontLigatures": true
 }
