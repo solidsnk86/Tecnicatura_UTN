@@ -1,6 +1,7 @@
 ﻿# Clase de Git Bash, Python, JavaScript y Java UTN Facultad Regional San Rafael (Mendoza)
 
 **Profesor Ariel Betancud**
+**Natalia Lucero**
 
 Este repositorio se creó con fines educativos para aprender sobre Git Bash y sus comandos así como también las primeras clases de Python, JavaScript y Java. Fue creado durante las clases de Programación I con el profesor <a style="color: cornflowerblue" href="https://github.com/ArielBetancud22">Ariel Betancud</a>.
 
