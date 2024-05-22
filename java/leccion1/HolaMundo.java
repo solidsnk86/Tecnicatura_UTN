@@ -154,17 +154,31 @@ public class HolaMundo {
          */
         // Conversión de tipos primitivos
         /*
-         * int edad = "38";
+         * var edad = Integer.parseInt("38");
          * System.out.println("edad: " + (edad + 1));
          * var valorPI = Double.parseDouble("3.1416");
          * System.out.println("vavlorPI = " + valorPI);
+         * 
+         * // Pedir un valor
+         * 
+         * @SuppressWarnings("resource")
+         * var entrada = new Scanner(System.in);
+         * System.out.println("Digite su edad: ");
+         * edad = Integer.parseInt(entrada.nextLine());
+         * System.out.println("Edad = " + edad);
          */
-        // Pedir un valor
-        @SuppressWarnings("resource")
-        var entrada = new Scanner(System.in);
-        System.out.println("Digite su edad: ");
-        var edad = Integer.parseInt(entrada.nextLine());
-        System.out.println("Entrada: " + entrada + edad);
+
+        // Conversión de tipos primitivos en Java parte 2
+        var edadTexto = String.valueOf((10));
+        System.out.println("edadTexto = " + edadTexto);
+
+        var fraseChar = "programadores".charAt(12);
+        System.out.println("fraseChar = " + fraseChar);
+        try (var entrada = new Scanner(System.in)) {
+            System.out.println("Digite un caracter: ");
+            fraseChar = entrada.nextLine().charAt((0));
+            System.out.println("fraseChar = " + fraseChar);
+        }
 
     }
 }
