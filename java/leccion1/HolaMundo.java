@@ -105,31 +105,28 @@ public class HolaMundo {
          */
 
         // Tipos primitivos char
-        /*
-         * char miVariableChar = 'a';
-         * System.out.println("miVariableChar = " + miVariableChar);
-         * 
-         * char varCaracter = '\u0024'; // Indicamos a Java la signación unicode
-         * System.out.println("varCharacter = " + varCaracter);
-         * char varCaracterDcimal = 36; // Valor decimal del juego de caracteres de
-         * unicode
-         * System.out.println("varCaracterDecimal = " + varCaracterDcimal);
-         * char varCaracterSimbolo = '$'; // Caracter especial símbolo alt + 36
-         * System.out.println("varCarcaterSimbolo = " + varCaracterSimbolo);
-         * 
-         * var varCaracter1 = '\u0024'; // Indicamos a Java la signación unicode
-         * System.out.println("varCharacter = " + varCaracter1);
-         * var varCaracterDcimal1 = (char) 36; // Valor Entero y le asigna un tipo int
-         * <- Conversión con (char)
-         * System.out.println("varCaracterDecimal = " + varCaracterDcimal1);
-         * var varCaracterSimbolo1 = '$'; // Caracter especial símbolo alt + 36
-         * System.out.println("varCarcaterSimbolo = " + varCaracterSimbolo1);
-         * 
-         * int varEnteroChar = '$';
-         * System.out.println("varEnteroChar = " + varEnteroChar);
-         * int caracterChar = 'b';
-         * System.out.println("caracterChar = " + caracterChar);
-         */
+
+        char miVariableChar = 'a';
+        System.out.println("miVariableChar = " + miVariableChar);
+
+        char varCaracter = '\u0024'; // Indicamos a Java la signación unicode
+        System.out.println("varCharacter = " + varCaracter);
+        char varCaracterDcimal = 36; // Valor decimal del juego de caracteres de unicode
+        System.out.println("varCaracterDecimal = " + varCaracterDcimal);
+        char varCaracterSimbolo = '$'; // Caracter especial símbolo alt + 36
+        System.out.println("varCarcaterSimbolo = " + varCaracterSimbolo);
+
+        var varCaracter1 = '\u0024'; // Indicamos a Java la asignación unicode
+        System.out.println("varCharacter = " + varCaracter1);
+        var varCaracterDcimal1 = (char) 36; // Valor Entero y le asigna un tipo int <- Conversión con (char)
+        System.out.println("varCaracterDecimal = " + varCaracterDcimal1);
+        var varCaracterSimbolo1 = '$'; // Caracter especial símbolo alt + 36
+        System.out.println("varCarcaterSimbolo = " + varCaracterSimbolo1);
+
+        int varEnteroChar = '$';
+        System.out.println("varEnteroChar = " + varEnteroChar);
+        int caracterChar = '•';
+        System.out.println("caracterChar = " + caracterChar);
 
         // Tipos primitivos tipos booleanos
         /*
@@ -169,16 +166,18 @@ public class HolaMundo {
          */
 
         // Conversión de tipos primitivos en Java parte 2
-        var edadTexto = String.valueOf((10));
-        System.out.println("edadTexto = " + edadTexto);
-
-        var fraseChar = "programadores".charAt(12);
-        System.out.println("fraseChar = " + fraseChar);
-        try (var entrada = new Scanner(System.in)) {
-            System.out.println("Digite un caracter: ");
-            fraseChar = entrada.nextLine().charAt((0));
-            System.out.println("fraseChar = " + fraseChar);
-        }
+        /*
+         * var edadTexto = String.valueOf((10));
+         * System.out.println("edadTexto = " + edadTexto);
+         * 
+         * var fraseChar = "programadores".charAt(12);
+         * System.out.println("fraseChar = " + fraseChar);
+         * try (var entrada = new Scanner(System.in)) {
+         * System.out.println("Digite un caracter: ");
+         * fraseChar = entrada.nextLine().charAt((0));
+         * System.out.println("fraseChar = " + fraseChar);
+         * }
+         */
 
     }
 }

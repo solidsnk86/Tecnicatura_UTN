@@ -1,24 +1,18 @@
 const $ = (selector) => document.querySelector(selector);
-const $body = $("#root");
+const $body = $("#root01");
 const $root02 = $("#root02");
-const $h1 = $("h1");
-const $h2 = $("h2");
 const $pre = $("#list");
 const $p = $("#description");
-const $p2 = $("#description2");
 const $footer = $("footer");
 const fileName = "historia.txt";
 const stylesData = [
   "background-color: #4071d36e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
-$h1.innerHTML = "Clase de Git Bash • UTN-FRSR";
-$h2.innerHTML = "Historia de Git";
 $p.style.color = "#fff";
 $p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragmento es un fetch del archivo ${styleText(
   "historia.txt"
 )} el cual se puede editar y se verá reflejado el cambio aquí:`;
 $pre.style.color = "#fff";
-$p2.innerHTML = "Archivo TXT (Sintáxis JS y Java)";
 
 function styleText(string) {
   return `<span style="background-color: #3A3F4B; padding-inline: 2px; border-radius: 4px;">${string}</span>`;
@@ -54,13 +48,19 @@ document.addEventListener("DOMContentLoaded", () => {
     return createHTML02(formatedTXT);
   };
 
-  const createHTML01 = (data) => {
+  const leerEjerccioJAVA = async () => {
+    const res = await fetch("../java/leccion1/EjercicioLibro.java");
+    const code = await res.text();
+    return await createPRE(code);
+  };
+
+  function createHTML01(data) {
     $body.innerHTML = `
       <div style="${stylesData.join()}">
         ${data}
       </div>
     `;
-  };
+  }
 
   function createHTML02(datos) {
     $root02.innerHTML = `
@@ -70,8 +70,15 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
+  function createPRE(code) {
+    const pre = $("#pre01");
+    pre.classList.add("pre");
+    pre.innerHTML = code;
+  }
+
   leerTXT01();
   leerTXT02();
+  leerEjerccioJAVA();
 });
 
 document.title = "Lector de archivo TXT";
