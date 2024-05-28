@@ -19,7 +19,6 @@ public class Ejercicio1 {
             System.out.println("Precio del libro: $" + precioLibro);
             System.out.println("El envío del libro gratuito es: " + envioLibro);
         } catch (NumberFormatException e) {
-            e.printStackTrace();
         }
     }
 }

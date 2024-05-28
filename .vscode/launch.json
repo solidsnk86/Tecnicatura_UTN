@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CuestionarioClase6",
+      "request": "launch",
+      "mainClass": "CuestionarioClase6",
+      "projectName": "class-git_1721a834"
+    },
+    {
+      "type": "java",
       "name": "EjercicioLibro",
       "request": "launch",
       "mainClass": "EjercicioLibro",
