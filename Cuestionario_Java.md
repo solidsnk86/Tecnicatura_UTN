@@ -40,6 +40,8 @@
 
 `Respuesta:` La variable tipo float tiene `32 bits.`
 
+### Captura resolución del cuestionario:
+
 <div align="center">
     <img src="public/Ejercicio_CuestionarioClase6.png" alt="Captura de ejercicio para el cuestionario">
 </div>
