@@ -3,7 +3,7 @@ public class CuestionarioClase6 {
         // Pregunta número 1
         // ¿Cuál es el tipo de dato de esta variable?
         var a = 0;
-        System.out.println("El tipo de dato de la variable 'a' es: " + typeOf(a));
+        System.out.println("El tipo de dato de la variable a es: " + typeOf(a));
         // Pregunta número 2
         // ¿Cuál es el rango del tipo short?
         short rangoShort = 0;
