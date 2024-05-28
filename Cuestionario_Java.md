@@ -13,7 +13,7 @@
 - [-2,147483,648 a 2,147483,647]
 - [-9,223,372,036,854,775,808 a 9,223,372,036,854,775,807]
 
-`Respuesta`: El rango del tipo short es `-32,768 a 32,767`
+`Respuesta:` El rango del tipo short es `-32,768 a 32,767`
 
 3. ¿Cuántos bytes tiene una variable de tipo long?
 
