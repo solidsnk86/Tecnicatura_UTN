@@ -42,6 +42,10 @@
     <img src="public/Ejercicio_CuestionarioClase6.png" alt="Captura de ejercicio para el cuestionario">
 </div>
 
+---
+
+Código que he usado para resolver el cuestionario:
+
 ```java
 public class CuestionarioClase6 {
     public static void main(String[] args) {
