@@ -23,7 +23,7 @@
 
 - 8, 16, 32, 64​
 
-`Respuesta:` Una variable de tipo "int" en Java ocupa `32 bits`.
+`Respuesta:` Una variable de tipo "int" en Java ocupa `32 bits`
 
 5. ¿Cuál es el tipo de dato para esta variable?
 
@@ -36,4 +36,4 @@
 
 - 8, 16, 32, 64
 
-`Respuesta:` 
+`Respuesta:` La variable tipo float tiene `32 bits.`
