@@ -6,8 +6,6 @@ public class CuestionarioClase6 {
         System.out.println("El tipo de dato de la variable a es: " + typeOf(a));
         // Pregunta número 2
         // ¿Cuál es el rango del tipo short?
-        short rangoShort = 0;
-        System.out.println("numeroEnteroShort = " + rangoShort);
         System.out.println("El rango del short es: " + Short.MIN_VALUE + " a " + Short.MAX_VALUE);
         // Pregunta número 3
         // ¿Cuántos bytes tiene una variable de tipo long?
