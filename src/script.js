@@ -48,12 +48,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return createHTML02(formatedTXT);
   };
 
-  const leerEjerccioJAVA = async () => {
-    const res = await fetch("../java/leccion1/EjercicioLibro.java");
-    const code = await res.text();
-    return await createPRE(code);
-  };
-
   function createHTML01(data) {
     $body.innerHTML = `
       <div style="${stylesData.join()}">
@@ -70,15 +64,8 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-  function createPRE(code) {
-    const pre = $("#pre01");
-    pre.classList.add("pre");
-    pre.innerHTML = code;
-  }
-
   leerTXT01();
   leerTXT02();
-  leerEjerccioJAVA();
 });
 
 document.title = "Lector de archivo TXT";
