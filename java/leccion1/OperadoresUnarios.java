@@ -35,5 +35,20 @@ public class OperadoresUnarios {
         var varL = varK--; // Primero el valor de variable, lueho queda el decremento
         System.out.println("varI = " + varK); // Va a decrementar en 1
         System.out.println("varJ = " + varL);
+
+        // Operadore de Igualdad y Relacionales
+        var aNum = 5;
+        var bNum = 4;
+        var cNum = (aNum == bNum);
+        System.out.println("cNum = " + cNum);
+
+        var dNum = aNum != bNum;
+        System.out.println("var dNum = " + dNum);
+        // Comparador de objetos Strings
+        var cadenaA = "Hello";
+        var cadenaB = "Hello";
+        var cVar = cadenaA.equals(cadenaB);
+        System.out.println("cVar = " + cVar);
+
     }
 }
