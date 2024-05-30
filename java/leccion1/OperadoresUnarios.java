@@ -93,11 +93,29 @@ public class OperadoresUnarios {
          */
 
         // Operador Ternario
-        var resultadoT = (5 > 6) ? "Verdadero" : "Falso";
-        System.out.println("resultadoT = " + resultadoT);
+        /*
+         * var resultadoT = (5 > 6) ? "Verdadero" : "Falso";
+         * System.out.println("resultadoT = " + resultadoT);
+         * 
+         * var numeroT = 4;
+         * resultadoT = (numeroT % 2 == 0) ? "Es un número Par." :
+         * "Es un número Impar.";
+         * System.out.println("resultadoT = " + resultadoT);
+         */
 
-        var numeroT = 4;
-        resultadoT = (numeroT % 2 == 0) ? "Es un número Par." : "Es un número Impar.";
-        System.out.println("resultadoT = " + resultadoT);
+        // Prioridad de los operadores 
+
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--;
+        System.out.println("variable x = " + x);
+        System.out.println("variable y = " + y);
+        System.out.println("variable z = " + z);
+
+        var solucionAritmetica = 4 + 5 * 6 / 3; // 4 + ((5 * 6) / 3) = 14
+        System.out.println("solucionAritmetica " + solucionAritmetica);
+
+        solucionAritmetica = (4 + 5) * 6 / 3; // 4 + 5 = 9 * 6 = 54 / 3 = 18
+        System.out.println("solucionAritmetica = " + solucionAritmetica);
     }
 }
