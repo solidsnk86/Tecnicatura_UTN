@@ -71,23 +71,33 @@ public class OperadoresUnarios {
          */
 
         // Operadores Condicionales
-        var valorA = 7;
-        var valorMinimo = 0;
-        var valorMaximo = 10;
-        var respuesta = valorA >= 0 && valorA <= 10;
+        /*
+         * var valorA = 7;
+         * var valorMinimo = 0;
+         * var valorMaximo = 10;
+         * var respuesta = valorA >= 0 && valorA <= 10;
+         * 
+         * if (respuesta == true) {
+         * System.out.println("Está dentro del rango establecido");
+         * } else {
+         * System.out.println("Está fuera del rango establecido");
+         * }
+         * 
+         * var vacaciones = false;
+         * var diaLibre = true;
+         * if (vacaciones || diaLibre) {
+         * System.out.println("Papá puede asistir al juego de su hijo");
+         * } else {
+         * System.out.println("Papá no puede asistir al juego de su hijo");
+         * }
+         */
 
-        if (respuesta == true) {
-            System.out.println("Está dentro del rango establecido");
-        } else {
-            System.out.println("Está fuera del rango establecido");
-        }
+        // Operador Ternario
+        var resultadoT = (5 > 6) ? "Verdadero" : "Falso";
+        System.out.println("resultadoT = " + resultadoT);
 
-        var vacaciones = false;
-        var diaLibre = true;
-        if (vacaciones || diaLibre) {
-            System.out.println("Papá puede asistir al juego de su hijo");
-        } else {
-            System.out.println("Papá no puede asistir al juego de su hijo");
-        }
+        var numeroT = 4;
+        resultadoT = (numeroT % 2 == 0) ? "Es un número Par." : "Es un número Impar.";
+        System.out.println("resultadoT = " + resultadoT);
     }
 }
