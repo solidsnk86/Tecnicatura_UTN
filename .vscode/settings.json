@@ -2,7 +2,6 @@
   "editor.formatOnSave": true,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "files.autoSave": "afterDelay",
-  "livePreview.defaultPreviewPath": "/index.html",
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.guides.bracketPairs": true,
   "editor.cursorBlinking": "expand",
