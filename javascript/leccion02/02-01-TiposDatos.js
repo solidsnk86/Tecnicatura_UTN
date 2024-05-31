@@ -61,6 +61,3 @@ var z = "";
 console.log(z); // Empty string = (cadena vacía)
 console.log(typeof z);
 
-function Persona() {
-  
-}
