@@ -26,3 +26,18 @@ function mayorDeEdad(edad) {
 }
 
 mayorDeEdad(miEdad);
+
+// Ejercicio número 3 (Dentro de un rango)
+let dentroDeRango = 5;
+let valMin = 0,
+  valMax = 10;
+
+function verificarRango(rango) {
+  if (dentroDeRango >= valMin && dentroDeRango <= valMax) {
+    console.log(`El valor ${rango} está dentro del rango.`);
+  } else {
+    console.log(`El valor ${rango} no está dentro del rango`);
+  }
+}
+
+verificarRango(dentroDeRango);
