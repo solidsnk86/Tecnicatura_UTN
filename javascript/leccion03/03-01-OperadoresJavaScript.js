@@ -1,12 +1,11 @@
-var num1 = 6;
-var num2 = 3;
+var num1 = prompt("Ingrese un número: ");
 
 function parImpar(num) {
   if (num % 2 === 0) {
-    console.log(`El número ${num} es Par.`);
+    alert(`El número ${num} es Par.`);
   } else {
-    console.log(`El número ${num} es Impar.`);
+    alert(`El número ${num} es Impar.`);
   }
 }
 
-parImpar(num2);
+parImpar(num1);
