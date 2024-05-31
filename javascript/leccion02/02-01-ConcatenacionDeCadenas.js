@@ -14,3 +14,18 @@ console.log(juntos);
 
 nombre += apellido; // Operador simplificado
 console.log(nombre);
+
+// Let y const
+let nombre2 = "Pedro";
+console.log(nombre2);
+// Una constante no puede ser modificada
+const apellido2 = "Picapiedras";
+console.log(nombre2, apellido2);
+
+let x, y; // Se pueden crear varias variables dentro de una misma línea
+(x = 17), (y = 21); // Se puede hacer asignación de varias variables dentro de la misma línea
+let z = x + y;
+console.log(z);
+
+let _1num = 31; // No utilizar números para inicializar el nombre de una variable
+let romper = "break"; // No usar palabras reservadas
