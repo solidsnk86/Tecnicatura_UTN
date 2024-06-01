@@ -29,3 +29,5 @@ console.log(z);
 
 let _1num = 31; // No utilizar números para inicializar el nombre de una variable
 let romper = "break"; // No usar palabras reservadas
+
+

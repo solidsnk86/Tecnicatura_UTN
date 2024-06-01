@@ -65,3 +65,6 @@ Operadores Relacionales (Tipo Bollean)
 >=
 <=
 
+Operadores Lógicos
+AND -> && "ampersand"
+OR -> || "o"
