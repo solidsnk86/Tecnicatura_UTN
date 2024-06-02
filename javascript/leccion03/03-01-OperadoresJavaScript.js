@@ -41,3 +41,26 @@ function verificarRango(rango) {
 }
 
 verificarRango(dentroDeRango);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const url = "https://agilemanifesto.org/iso/es/manifesto.html";
+  const fetchManisfesto = async (url) => {
+    try {
+      const response = await fetch(url);
+      const html = await response.text();
+      const cleanedHtml = html.replace(/<script[\s\S]*?<\/script>/gi, ""); // Elimina todas las etiquetas <script> y su contenido
+      console.log(cleanedHtml);
+      return cleanedHtml;
+    } catch (error) {
+      throw new Error("No fue posible hacer el fetch de la url", error);
+    }
+  };
+  async function createHTML() {
+    const $body = document.body;
+    $body.style.backgroundImage =
+      "url('https://agilemanifesto.org/background.jpg')";
+
+    $body.innerHTML = await fetchManisfesto(url);
+  }
+  createHTML();
+});
