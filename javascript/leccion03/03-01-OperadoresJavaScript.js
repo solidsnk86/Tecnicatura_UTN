@@ -5,9 +5,9 @@ var num3 = 9;
 
 function parImpar(num) {
   if (num % 2 === 0) {
-    console.log(`El número ${num} es Par.`);
+    console.log(`El número (${num}) es Par.`);
   } else {
-    console.log(`El número ${num} es Impar.`);
+    console.log(`El número (${num}) es Impar.`);
   }
 }
 
@@ -19,9 +19,9 @@ const mayor = 18;
 
 function mayorDeEdad(edad) {
   if (edad >= mayor) {
-    console.log(`Usted tiene ${edad}, es mayor de edad.`);
+    console.log(`Usted tiene ${edad} años, es mayor de edad.`);
   } else {
-    console.log(`Usted tiene ${edad}, no es mayor de edad.`);
+    console.log(`Usted tiene ${edad} años, no es mayor de edad.`);
   }
 }
 
@@ -44,23 +44,30 @@ verificarRango(dentroDeRango);
 
 document.addEventListener("DOMContentLoaded", () => {
   const url = "https://agilemanifesto.org/iso/es/manifesto.html";
-  const fetchManisfesto = async (url) => {
+  const fetchManifesto = async (url) => {
     try {
       const response = await fetch(url);
       const html = await response.text();
       const cleanedHtml = html.replace(/<script[\s\S]*?<\/script>/gi, ""); // Elimina todas las etiquetas <script> y su contenido
-      console.log(cleanedHtml);
       return cleanedHtml;
     } catch (error) {
       throw new Error("No fue posible hacer el fetch de la url", error);
     }
   };
+  const imageUrl = "https://agilemanifesto.org/background.jpg";
   async function createHTML() {
     const $body = document.body;
-    $body.style.backgroundImage =
-      "url('https://agilemanifesto.org/background.jpg')";
-
-    $body.innerHTML = await fetchManisfesto(url);
+    $body.style.backgroundImage = `url(${imageUrl})`;
+    $body.innerHTML = await fetchManifesto(url);
   }
+  // Se crea etiqueta link para el favicon
+  const favicon = () => {
+    const linkTag = document.createElement("link");
+    linkTag.rel = "shortcut icon";
+    linkTag.type = "image/x-icon";
+    linkTag.href = imageUrl;
+    document.head.appendChild(linkTag);
+  };
+  favicon();
   createHTML();
 });
