@@ -61,6 +61,10 @@ var z = "";
 console.log(z); // Empty string = (cadena vacía)
 console.log(typeof z);
 
-function Persona() {
-  
-}
+// Hoy ya no se usa var se trata de utilizar let y const
+let nombre2 = "Pedro";
+console.log(nombre2);
+
+const apellido2 = "Picapiedras";
+// apellido2 = "Meza"; Una constante no se puede modificar
+console.log(apellido2);
