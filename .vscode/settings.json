@@ -11,6 +11,16 @@
   "editor.fontLigatures": true,
   "java.format.enabled": true,
   "[java]": {
-    "editor.defaultFormatter": "redhat.java"
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSave": true
+  },
+  "[python]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "gitlens.codeLens.symbolScopes": ["!Module"],
+    "editor.formatOnType": true,
+    "editor.formatOnSave": true,
+    "editor.autoIndent": "full",
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.wordBasedSuggestions": "off"
   }
 }
