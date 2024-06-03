@@ -228,16 +228,17 @@ nombre = input("Ingrese el nombre del libro: ")
 id = int(input("Digite el ID del libro: "))
 precio = float(input("Digite el precio del libro: "))
 envio_gratuito = input("Indicar si el envío es gratuito (True/False): ")
-if envio_gratuito == 'True':
+if envio_gratuito == "True":
     envio_gratuito = True
-elif envio_gratuito == 'False':
+elif envio_gratuito == "False":
     envio_gratuito = False
 else:
     envio_gratuito = "El valor es incorrecto, debe escribir True o False"
-print(f'''
-      Nombre: {nombre}
-      ID: {id}
-      Precio: {precio}
-      Envío gratuito?: {envio_gratuito}
-      ''')
-    
+print(
+    f"""
+    Nombre: {nombre}
+    ID: {id}
+    Precio: {precio}
+    Envío gratuito?: {envio_gratuito}
+    """
+)
