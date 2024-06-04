@@ -38,7 +38,7 @@ body::before {
   left: 0;
   transform-style: flat;
   pointer-events: none;
-  z-index: 0;
+  z-index: -1;
 }
 
 h1 {
