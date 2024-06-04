@@ -48,7 +48,15 @@ document.addEventListener("DOMContentLoaded", () => {
     try {
       const response = await fetch(url);
       const html = await response.text();
-      const cleanedHtml = html.replace(/<script[\s\S]*?<\/script>/gi, ""); // Elimina todas las etiquetas <script> y su contenido
+      let cleanedHtml = html.replace(/<script[\s\S]*?<\/script>/gi, ""); // Expresión regular que elimina todas las etiquetas <script> y su contenido
+      cleanedHtml = cleanedHtml.replace(
+        /<a href["principles.html"\s\S]*?<\/a>/,
+        '<a href="https://agilemanifesto.org/iso/es/principles.html">Doce principios del software Ágil</a>'
+      );
+      cleanedHtml = cleanedHtml.replace(
+        /<a\s+href=\/display\/index.html[\s\S]*?<\/a>/i,
+        '<a href="https://agilemanifesto.org/display/index.html">Ver firmantes</a>'
+      );
       return cleanedHtml;
     } catch (error) {
       throw new Error("No fue posible hacer el fetch de la url", error);
@@ -68,6 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
     linkTag.href = imageUrl;
     document.head.appendChild(linkTag);
   };
+
   favicon();
   createHTML();
 });
