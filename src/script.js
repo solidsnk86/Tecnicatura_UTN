@@ -6,7 +6,7 @@ const $p = $("#description");
 const $footer = $("footer");
 const fileName = "historia.txt";
 const stylesData = [
-  "background-color: #4071d36e; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #555; font-family: system-ui; border-radius: 8px; overflow: auto;",
+  "background-color: transparent; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #222; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
 $p.style.color = "#fff";
 $p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragmento es un fetch del archivo ${styleText(
