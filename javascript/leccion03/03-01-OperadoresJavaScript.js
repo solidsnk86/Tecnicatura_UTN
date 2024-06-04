@@ -57,6 +57,14 @@ document.addEventListener("DOMContentLoaded", () => {
         /<a\s+href=\/display\/index.html[\s\S]*?<\/a>/i,
         '<a href="https://agilemanifesto.org/display/index.html">Ver firmantes</a>'
       );
+      cleanedHtml = cleanedHtml.replace(
+        /<a href=\/authors.html[\s\S]*?<\/a>/,
+        '<a href="https://agilemanifesto.org/authors.html">Sobre los autores</a>'
+      );
+      cleanedHtml = cleanedHtml.replace(
+        /<a href=\/history.html[\s\S]*?<\/a>/,
+        '<a href="https://agilemanifesto.org/history.html">Sobre el Manifiesto</a>'
+      );
       return cleanedHtml;
     } catch (error) {
       throw new Error("No fue posible hacer el fetch de la url", error);
