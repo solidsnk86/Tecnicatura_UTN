@@ -42,49 +42,59 @@ function verificarRango(rango) {
 
 verificarRango(dentroDeRango);
 
-document.addEventListener("DOMContentLoaded", () => {
-  const url = "https://agilemanifesto.org/iso/es/manifesto.html";
-  const fetchManifesto = async (url) => {
-    try {
-      const response = await fetch(url);
-      const html = await response.text();
-      let cleanedHtml = html.replace(/<script[\s\S]*?<\/script>/gi, ""); // Expresión regular que elimina todas las etiquetas <script> y su contenido
-      cleanedHtml = cleanedHtml.replace(
-        /<a href["principles.html"\s\S]*?<\/a>/,
-        '<a href="https://agilemanifesto.org/iso/es/principles.html">Doce principios del software Ágil</a>'
-      );
-      cleanedHtml = cleanedHtml.replace(
-        /<a\s+href=\/display\/index.html[\s\S]*?<\/a>/i,
-        '<a href="https://agilemanifesto.org/display/index.html">Ver firmantes</a>'
-      );
-      cleanedHtml = cleanedHtml.replace(
-        /<a href=\/authors.html[\s\S]*?<\/a>/,
-        '<a href="https://agilemanifesto.org/authors.html">Sobre los autores</a>'
-      );
-      cleanedHtml = cleanedHtml.replace(
-        /<a href=\/history.html[\s\S]*?<\/a>/,
-        '<a href="https://agilemanifesto.org/history.html">Sobre el Manifiesto</a>'
-      );
-      return cleanedHtml;
-    } catch (error) {
-      throw new Error("No fue posible hacer el fetch de la url", error);
-    }
-  };
-  const imageUrl = "https://agilemanifesto.org/background.jpg";
-  async function createHTML() {
-    const $body = document.body;
-    $body.style.backgroundImage = `url(${imageUrl})`;
-    $body.innerHTML = await fetchManifesto(url);
-  }
-  // Se crea etiqueta link para el favicon
-  const favicon = () => {
-    const linkTag = document.createElement("link");
-    linkTag.rel = "shortcut icon";
-    linkTag.type = "image/x-icon";
-    linkTag.href = imageUrl;
-    document.head.appendChild(linkTag);
-  };
+// Ejercicio número 4 (Ver si el padre puede asistir a un evento del hijo)
 
-  favicon();
-  createHTML();
+const diaLibre = false;
+const vacaciones = true;
+
+function verificarSiPuedeAsistir() {
+  if (diaLibre || vacaciones) {
+    console.log("El padre puede asistir al evento de su hijo.");
+  } else {
+    console.log("El padre No puede asistir al evento de su hijo.");
+  }
+}
+
+verificarSiPuedeAsistir();
+
+// Ejercicio númer 5: Operador ternario (Par / Impar)
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const grupo = {
+  Par: [],
+  Impar: [],
+};
+
+numeros.forEach((num) => {
+  let key;
+  num % 2 === 0 ? (key = "Par") : (key = "Impar");
+  grupo[key].push(num);
 });
+
+console.log(grupo);
+
+// Ejercicio número 6: Es mayor de edad (Convertir a Sring)
+let edad = "38",
+  mayorEdad = "18";
+console.log(typeof edad);
+
+let edad2 = Number(edad);
+let mayorEdad2 = Number(mayorEdad);
+
+console.log(typeof edad2);
+
+function verificamosEdad(edad2) {
+  if (edad2 >= mayorEdad2) {
+    console.log(`Tiene ${edad2} años, puede votar.`);
+  } else {
+    console.log(`Tiene ${edad2} años, no puede votar.`);
+  }
+}
+verificamosEdad(edad2);
+
+// Ejercicio número 7: Función isNaN (Is not a number)
+function noEsUnNumero() {
+  if (isNaN(edad2)) {
+    console.log("Esta variable no solo contiene números");
+  }
+}
+noEsUnNumero();
