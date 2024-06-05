@@ -41,3 +41,18 @@ function verificarRango(rango) {
 }
 
 verificarRango(dentroDeRango);
+
+// Ejercicio número 4 (Ver si el padre puede asistir a un evento del hijo)
+
+const diaLibre = false;
+const vacaciones = true;
+
+function verificarSiPuedeAsistir() {
+  if (diaLibre || vacaciones) {
+    console.log("El padre puede asistir al evento de su hijo.");
+  } else {
+    console.log("El padre No puede asistir al evento de su hijo.");
+  }
+}
+
+verificarSiPuedeAsistir();
