@@ -71,3 +71,22 @@ numeros.forEach((num) => {
 });
 
 console.log(grupo);
+
+// Ejercicio número 6: Es mayor de edad (Convertir a Sring)
+let edad = "38",
+  mayorEdad = "18";
+console.log(typeof edad);
+
+let edad2 = Number(edad);
+let mayorEdad2 = Number(mayorEdad);
+
+console.log(typeof edad2);
+
+function verificamosEdad(edad2) {
+  if (edad2 >= mayorEdad2) {
+    console.log(`Tiene ${edad2} años, es mayor de edad.`);
+  } else {
+    console.log(`Tiene ${edad2} años, es menor de edad.`);
+  }
+}
+verificamosEdad(edad2);
