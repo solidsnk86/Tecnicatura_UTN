@@ -84,9 +84,17 @@ console.log(typeof edad2);
 
 function verificamosEdad(edad2) {
   if (edad2 >= mayorEdad2) {
-    console.log(`Tiene ${edad2} años, es mayor de edad.`);
+    console.log(`Tiene ${edad2} años, puede votar.`);
   } else {
-    console.log(`Tiene ${edad2} años, es menor de edad.`);
+    console.log(`Tiene ${edad2} años, no puede votar.`);
   }
 }
 verificamosEdad(edad2);
+
+// Ejercicio número 7: Función isNaN (Is not a number)
+function noEsUnNumero() {
+  if (isNaN(edad2)) {
+    console.log("Esta variable no solo contiene números");
+  }
+}
+noEsUnNumero();
