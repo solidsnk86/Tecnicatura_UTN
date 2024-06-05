@@ -56,3 +56,18 @@ function verificarSiPuedeAsistir() {
 }
 
 verificarSiPuedeAsistir();
+
+// Ejercicio númer 5: Operador ternario (Par / Impar)
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const grupo = {
+  Par: [],
+  Impar: [],
+};
+
+numeros.forEach((num) => {
+  let key;
+  num % 2 === 0 ? (key = "Par") : (key = "Impar");
+  grupo[key].push(num);
+});
+
+console.log(grupo);
