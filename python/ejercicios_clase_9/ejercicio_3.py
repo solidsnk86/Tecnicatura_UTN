@@ -1,6 +1,6 @@
 # Ejercicio 3: Leer 10 números e imprimir cuantos son positivos,
 # cuantos negativos y cuantos neutros.
-print("Programa para identificar números positivos, negativos y neutros")
+print("Programa para identificar 10 números ya sean positivos, negativos o neutros.")
 
 num_positivo = 0
 num_neutro = 0
@@ -17,7 +17,7 @@ for i in range(10):
 print(
     f"""
     Números positivos: {num_positivo}
-    Números negativos: {num_negativo}
     Números neutros: {num_neutro}
+    Números negativos: {num_negativo}
     """
 )
