@@ -1,6 +1,6 @@
 // Tipos de Datos en JavaScript
 /*
-La sintaxias en lo que es comentarios es
+La sintáxis en lo que es comentarios es
 muy similar a la de Java
 realmente diríamos que es idéntica
 */
