@@ -34,5 +34,5 @@ else:
     print(f"La suma de los números impares es {suma_impares}")
     print(f"El conteo de los números impares es {conteo_impares}")
     print(
-        f"El promedio de los números impares es {promedio_impares:.2f}"  # Equivalente a un -toFixed(2) en JS
+        f"El promedio de los números impares es {promedio_impares:.2f}"  # Equivalente a un .toFixed(2) en JS
     )
