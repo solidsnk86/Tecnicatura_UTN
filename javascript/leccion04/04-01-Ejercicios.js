@@ -74,8 +74,8 @@ function determinarHoraDelDia(hora) {
 determinarHoraDelDia(hora);
 
 // Estructura switch / case / break (La sintaxis es igual a Java)
-let mes = 6;
-switch (mes) {
+let estacion;
+switch (new Date().getMonth()) {
   case 1:
   case 2:
   case 12:
