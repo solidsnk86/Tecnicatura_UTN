@@ -59,16 +59,16 @@ function formatHour(h) {
   });
   return hour;
 }
-const hour = formatHour(new Date());
+const hora = formatHour(new Date());
 
 function determinarHoraDelDia(hora) {
   if (hora >= "6" && hora <= "11") {
-    console.log(`Buenos días son las ${hora}`);
+    console.log(`Buenos días son las ${hora}.`);
   } else if (hora >= "12" && hora <= "20") {
-    console.log(`Buenas Tardes, son las ${hora}`);
+    console.log(`Buenas tardes, son las ${hora}.`);
   } else if (hora >= "20" && hora <= "12") {
-    console.log(`Buenas noches, son las ${hora}`);
+    console.log(`Buenas noches, son las ${hora}.`);
   }
 }
 
-determinarHoraDelDia(hour);
+determinarHoraDelDia(hora);
