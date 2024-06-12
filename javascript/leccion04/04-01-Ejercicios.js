@@ -38,15 +38,19 @@ function determinarEstacion() {
   const primaveraInicio = "21 de septiembre";
   const primaveraFin = "20 de diciembre";
 
+  let mensaje = "";
+
   if (esFechaEnRango(date, veranoInicio, veranoFin)) {
-    console.log("Usted se encuentra en Verano");
+    mensaje = "Usted se encuentra en Verano.";
   } else if (esFechaEnRango(date, otonoInicio, otonoFin)) {
-    console.log("Usted se encuentra en Otoño");
+    mensaje = "Usted se encuentra en Otoño.";
   } else if (esFechaEnRango(date, inviernoInicio, inviernoFin)) {
-    console.log("Usted se encuentra en Invierno");
+    mensaje = "Usted se encuentra en Invierno.";
   } else if (esFechaEnRango(date, primaveraInicio, primaveraFin)) {
-    console.log("Usted se encuentra en Primavera");
+    mensaje = "Usted se encuentra en Primavera.";
   }
+
+  return console.log(mensaje);
 }
 determinarEstacion();
 
