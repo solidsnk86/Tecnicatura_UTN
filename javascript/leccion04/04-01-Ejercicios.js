@@ -1,4 +1,4 @@
-// Ejercicio 1: Determinar Estación del Año según la fecha actual
+// Ejercicio 1: Determinar Estación del Año según la fecha actual.
 
 function formatDate(date) {
   const formattedDate = new Date(date).toLocaleDateString("es-ES", {
@@ -48,5 +48,27 @@ function determinarEstacion() {
     console.log("Usted se encuentra en Primavera");
   }
 }
-
 determinarEstacion();
+
+// Ejercicio 2: Determinar la hora del día y saludar según la hora del día.
+function formatHour(h) {
+  const hour = new Date(h).toLocaleTimeString("es-ES", {
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  });
+  return hour;
+}
+const hour = formatHour(new Date());
+
+function determinarHoraDelDia(hora) {
+  if (hora >= "6" && hora <= "11") {
+    console.log(`Buenos días son las ${hora}`);
+  } else if (hora >= "12" && hora <= "20") {
+    console.log(`Buenas Tardes, son las ${hora}`);
+  } else if (hora >= "20" && hora <= "12") {
+    console.log(`Buenas noches, son las ${hora}`);
+  }
+}
+
+determinarHoraDelDia(hour);
