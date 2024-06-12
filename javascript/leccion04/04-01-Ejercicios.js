@@ -72,3 +72,30 @@ function determinarHoraDelDia(hora) {
 }
 
 determinarHoraDelDia(hora);
+
+// Estructura switch / case / break (La sintaxis es igual a Java)
+let mes = 6;
+switch (mes) {
+  case 1:
+  case 2:
+  case 12:
+    estacion = "Verano";
+    break;
+  case 3:
+  case 4:
+  case 5:
+    estacion = "Otoño";
+    break;
+  case 6:
+  case 7:
+  case 8:
+    estacion = "Invierno";
+    break;
+  case 9:
+  case 10:
+  case 11:
+    estacion = "Primavera";
+}
+console.log(
+  `Bienvenidos a la estación de ${estacion}. Este es un ejercicio no tan preciso.`
+);
