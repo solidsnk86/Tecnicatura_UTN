@@ -1,7 +1,5 @@
 // Nuestro primer Hola Mundo desde Java
 
-import java.util.Scanner;
-
 public class HolaMundo {
     public static void main(String args[]) {
         /*
