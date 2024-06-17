@@ -12,12 +12,12 @@ const preStyles = {
   "background-color": "#1E2227",
   color: "green",
   width: "100%",
-  "padding": "8px",
+  padding: "8px",
   "border-bottom": "1px solid #2D2E32",
   "border-left": "1px solid #2D2E32",
   "border-radius": "4px",
   "font-family": "Cascadia Code PL SemiBold",
-  "font-size": "14px"
+  "font-size": "14px",
 };
 
 const styledText = (children) => {
@@ -28,11 +28,11 @@ const styledText = (children) => {
 };
 
 const styledPre = (children) => {
-    const styledPre = Object.entries(preStyles)
+  const styledPre = Object.entries(preStyles)
     .map(([key, value]) => `${key}: ${value}`)
-    .join(";")
-    return `<pre style="${styledPre}">${children}</pre>`
-}
+    .join(";");
+  return `<pre style="${styledPre}">${children}</pre>`;
+};
 
 // Contador de vocales
 function vowelsCounter(frase) {
@@ -122,3 +122,4 @@ document.addEventListener("DOMContentLoaded", () => {
     $input.value = "";
   });
 });
+

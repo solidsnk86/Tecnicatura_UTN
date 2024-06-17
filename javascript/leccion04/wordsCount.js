@@ -1,8 +1,19 @@
 const $ = (el) => document.querySelector(el);
 const $body = document.body;
 
+const styles = {
+  background: "rgba(236, 236, 236, 0.582)",
+  color: "yellow",
+  "font-style": "italic",
+  "padding-inline": "4px",
+  "border-radius": "4px"
+};
+
 function styleText(palabra) {
-  return `<span style="text-decoration: underline; color: purple;">"${palabra}"</span>`;
+  const styleString = Object.entries(styles)
+    .map(([key, value]) => `${key}: ${value}`)
+    .join(";");
+  return `<span style="${styleString}">${palabra}</span>`;
 }
 
 function saveToLocal(palabra, contador) {

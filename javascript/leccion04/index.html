@@ -8,6 +8,8 @@
     <style>
       body {
         font-family: "Cascadia Code PL SemiBold";
+        background-color: #1e2227;
+        color: #f0f0f0;
       }
       input {
         padding: 4px 8px;
@@ -18,14 +20,32 @@
       input:focus {
         outline: none;
       }
+
+      .results {
+        animation: fadeIn 1s;
+      }
+
+      button {
+        border: none;
+        padding: 4px 8px;
+        background-color: #eee;
+        color: #1e2227;
+        border: 1px solid #999;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      @keyframes fadeIn {
+        from {
+          transform: translateZ(-100px);
+        }
+        to {
+          transform: translateZ(0);
+        }
+      }
     </style>
   </head>
-  <body
-    style="
-      background: linear-gradient(to bottom, #f0f0f0, #ddd);
-      height: 100dvh;
-    "
-  >
+  <body>
     <button id="delete">Vaciar</button>
     <form>
       <h3>Contador de Letras</h3>
