@@ -56,3 +56,45 @@ function verificarSiPuedeAsistir() {
 }
 
 verificarSiPuedeAsistir();
+
+// Ejercicio númer 5: Operador ternario (Par / Impar)
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const grupo = {
+  Par: [],
+  Impar: [],
+};
+
+numeros.forEach((num) => {
+  let key;
+  num % 2 === 0 ? (key = "Par") : (key = "Impar");
+  grupo[key].push(num);
+});
+
+console.log(grupo);
+
+// Ejercicio número 6: Es mayor de edad (Convertir a Sring)
+let edad = "38",
+  mayorEdad = "18";
+console.log(typeof edad);
+
+let edad2 = Number(edad);
+let mayorEdad2 = Number(mayorEdad);
+
+console.log(typeof edad2);
+
+function verificamosEdad(edad2) {
+  if (edad2 >= mayorEdad2) {
+    console.log(`Tiene ${edad2} años, puede votar.`);
+  } else {
+    console.log(`Tiene ${edad2} años, no puede votar.`);
+  }
+}
+verificamosEdad(edad2);
+
+// Ejercicio número 7: Función isNaN (Is not a number)
+function noEsUnNumero() {
+  if (isNaN(edad2)) {
+    console.log("Esta variable no solo contiene números");
+  }
+}
+noEsUnNumero();
