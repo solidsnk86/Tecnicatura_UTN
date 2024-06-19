@@ -4,6 +4,7 @@ const $root02 = $("#root02");
 const $pre = $("#list");
 const $p = $("#description");
 const $footer = $("footer");
+const $button = $(".ver-mas");
 const fileName = "historia.txt";
 const stylesData = [
   "background-color: #0d1117; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #222; font-family: system-ui; border-radius: 8px; overflow: auto;",
@@ -63,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
     `;
   }
-
   leerTXT01();
   leerTXT02();
 });
