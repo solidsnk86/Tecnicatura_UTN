@@ -11,27 +11,33 @@ const styles = {
 const preStyles = {
   "background-color": "#1E2227",
   color: "green",
-  width: "100%",
+  width: "50%",
   padding: "8px",
   "border-bottom": "1px solid #2D2E32",
   "border-left": "1px solid #2D2E32",
   "border-radius": "4px",
   "font-family": "Cascadia Code PL SemiBold",
   "font-size": "14px",
+  "text-wrap": "pretty",
 };
 
-const styledText = (children) => {
-  const styledText = Object.entries(styles)
+const convertStylesToString = (stylesObject) => {
+  return Object.entries(stylesObject)
     .map(([key, value]) => `${key}: ${value}`)
-    .join(";");
-  return `<span style="${styledText}">${children}</span>`;
+    .join("; ");
 };
 
-const styledPre = (children) => {
-  const styledPre = Object.entries(preStyles)
-    .map(([key, value]) => `${key}: ${value}`)
-    .join(";");
-  return `<pre style="${styledPre}">${children}</pre>`;
+const addStyles = (styleType, children) => {
+  const stylesObject = styleType === "span" ? styles : preStyles;
+  const stylesString = convertStylesToString(stylesObject);
+
+  if (styleType === "span") {
+    return `<span style="${stylesString}">${children}</span>`;
+  } else if (styleType === "pre") {
+    return `<pre style="${stylesString}">${children}</pre>`;
+  } else {
+    throw new Error("Unsupported style type");
+  }
 };
 
 // Contador de vocales
@@ -58,7 +64,7 @@ function vowelsCounter2(frase) {
   return counter;
 }
 // Arrays
-const frutas = [
+const fruits = [
   "🍎",
   "🍏",
   "🍇",
@@ -83,8 +89,8 @@ function printFruit(fruits) {
   }
   return ($(".result-container-2").innerHTML = result);
 }
-$(".pre-1").innerHTML = `${styledPre(printFruit)}`;
-$(".result-container-3").innerHTML = printFruit(frutas);
+$(".pre-1").innerHTML = `${addStyles("pre", printFruit)}`;
+$(".result-container-3").innerHTML = printFruit(fruits);
 
 function parImpar(...nums) {
   const group = {
@@ -96,11 +102,12 @@ function parImpar(...nums) {
   });
   return group;
 }
-$(".pre-2").innerHTML = `${styledPre(parImpar)}`;
+$(".pre-2").innerHTML = `${addStyles("pre", parImpar)}`;
 const result = parImpar(1, 2, 3, 4, 5, 6, 7, 8, 9);
-$(".result-container-3").innerHTML = `Par: ${styledText(
+$(".result-container-3").innerHTML = `Par: ${addStyles(
+  "span",
   result.Par.join(", ")
-)} Impar: ${styledText(result.Impar.join(", "))}`;
+)} Impar: ${addStyles("span", result.Impar.join(", "))}`;
 
 document.addEventListener("DOMContentLoaded", () => {
   const $input = $("input");
@@ -111,9 +118,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const clone = template.cloneNode(true);
     clone.querySelector(".result").innerHTML = `
-      <p>La palabra ${styledText($input.value)} contiene ${vowelsCounter2(
-      $input.value
-    )} vocales.</p>
+      <p>La palabra ${addStyles(
+        "span",
+        $input.value
+      )} contiene ${vowelsCounter2($input.value)} vocales.</p>
     `;
 
     const resultContainer = $(".result-container");
@@ -122,4 +130,3 @@ document.addEventListener("DOMContentLoaded", () => {
     $input.value = "";
   });
 });
-
