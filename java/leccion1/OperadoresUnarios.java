@@ -26,7 +26,7 @@ public class OperadoresUnarios {
          * System.out.println("varG = " + varG);
          * System.out.println(("varH = " + varH));
          * 
-         * // Operadore Unarios de decremento: Predecremento
+         * // Operadores Unarios de decremento: Predecremento
          * var varI = 4;
          * var varJ = --varI;
          * System.out.println("varI = " + varI);
@@ -38,7 +38,7 @@ public class OperadoresUnarios {
          * System.out.println("varI = " + varK); // Va a decrementar en 1
          * System.out.println("varJ = " + varL);
          * 
-         * // Operadore de Igualdad y Relacionales
+         * // Operadores de Igualdad y Relacionales
          * var aNum = 5;
          * var bNum = 4;
          * var cNum = (aNum == bNum);
@@ -103,7 +103,7 @@ public class OperadoresUnarios {
          * System.out.println("resultadoT = " + resultadoT);
          */
 
-        // Prioridad de los operadores 
+        // Prioridad de los operadores
 
         var x = 5;
         var y = 10;

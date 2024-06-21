@@ -39,7 +39,7 @@ public class CuestionarioClase6 {
     }
 
     public static String typeOf(long obj) {
-        return "long";
+        return "long";  
     }
 
     public static String typeOf(short obj) {

@@ -12,7 +12,7 @@
   "java.format.enabled": true,
   "[java]": {
     "editor.defaultFormatter": "redhat.java",
-    "editor.formatOnSave": true,
+    "editor.formatOnSave": true
   },
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
@@ -21,6 +21,6 @@
     "editor.formatOnSave": true,
     "editor.autoIndent": "full",
     "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "currentDocument"
   }
 }
