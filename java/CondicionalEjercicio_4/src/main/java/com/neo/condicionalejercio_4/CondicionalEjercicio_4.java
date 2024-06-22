@@ -2,8 +2,9 @@
 // aprobará si su promedio de calificaciones es mayor o igual a 70
 // o reprueba caso contrario.
 
-package com.neo.condicionalejercio_4;
+package com.neo.condicionalejercio_4;   
 import java.util.Scanner;
+import java.text.MessageFormat;
 
 public class CondicionalEjercicio_4 {
     public static void main(String[] args) {
@@ -20,7 +21,7 @@ public class CondicionalEjercicio_4 {
         var promedio = suma / 3;
         
         if (promedio >= 70) {
-            System.out.println("La calificacion del alumno es: " + promedio + ". Esta Aprobado");
+            System.out.println(MessageFormat.format("La calificacion del alumno es: {0}. Esta Aprobado", promedio));
         } else {
             System.out.println("La calificacion del alumno es: " + promedio + ". Esta Desaprobado");
         }
