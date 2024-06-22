@@ -22,5 +22,6 @@
     "editor.autoIndent": "full",
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.wordBasedSuggestions": "currentDocument"
-  }
+  },
+  "java.configuration.updateBuildConfiguration": "interactive"
 }
