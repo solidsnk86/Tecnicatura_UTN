@@ -122,4 +122,12 @@ git reset --hard HEAD~1
 # Si has hecho un push al repositorio tiene arreglo
 # hacemos un git log --oneline para buscar el id del commit
 git revert "identificador del commit" ej: b3be3e0369
+
+# Este comando eliminará los archivos no rastreados
+# que están pendientes de commit
+git clean -f
+
+# Este comando eliminará los directorios y archivos no rastreados
+# que están pendientes de commit
+git clean -fd
 ```
