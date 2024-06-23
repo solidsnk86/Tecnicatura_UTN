@@ -10,10 +10,10 @@ import java.util.Scanner;
 public class CondicionalEjercicio_4 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        var calificaciones = 3;
+
         int suma = 0;
         System.out.println("Programa para determinar la calificación del usuario: (Rango aceptado en %, ej: 70)");
-        for (var i = 0; i < calificaciones; i++) {
+        for (var i = 0; i < 3; i++) {
             System.out.println("Digite la " + (i + 1) + "° calificación: ");
             double nota = Double.parseDouble(input.nextLine());
             suma += nota;
