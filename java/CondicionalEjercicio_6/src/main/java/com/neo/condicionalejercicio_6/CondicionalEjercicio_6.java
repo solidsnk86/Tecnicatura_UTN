@@ -17,7 +17,7 @@ public class CondicionalEjercicio_6 {
         int num1 = numbers[0];
         int num2 = numbers[1];
         double result;
-
+    
         if (num1 == num2) {
             result = num1 * num2;
         } else if (num1 > num2) {
