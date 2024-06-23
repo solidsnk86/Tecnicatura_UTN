@@ -1,5 +1,6 @@
 """
-Calculadora de IMC (Índice de Masa Corporal)
+Calculadora de IMC: 
+(Índice de Masa Corporal)
 """
 
 wegight = float(input("Ingrese su peso: "))
