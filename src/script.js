@@ -7,7 +7,7 @@ const $footer = $("footer");
 const $button = $(".ver-mas");
 const fileName = "historia.txt";
 const stylesData = [
-  "background-color: #0d1117; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #222; font-family: system-ui; border-radius: 8px; overflow: auto;",
+  "background-color: #1B1B1B; color: #fff; text-wrap: balance; padding: 10px; border: 1px solid #222; font-family: system-ui; border-radius: 8px; overflow: auto;",
 ];
 $p.style.color = "#fff";
 $p.innerHTML = `Aquí un poco de historia sobre Git y cómo se creó. Este fragmento es un fetch del archivo ${styleText(
@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function createHTML02(datos) {
     $root02.innerHTML = `
-    <div class="txt02">
+    <div class="txt02" contenteditable="true">
       <p>${datos}</p>
     </div>
     `;
