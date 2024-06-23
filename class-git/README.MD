@@ -1,3 +1,10 @@
+<div align="center">
+    <h1>Clase de GIT</h1>
+</div>
+
+Aquí algunos comandos:
+
+```bash
 # Clonar un repositorio remoto en tu máquina local
 git clone <url_del_repositorio>
 
@@ -114,3 +121,4 @@ git clean -f
 # Este comando eliminará los directorios y archivos no rastreados
 # que están pendientes de commit
 git clean -fd
+```
