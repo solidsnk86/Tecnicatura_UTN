@@ -1,10 +1,9 @@
 package com.neo.condicionalejercicio_6;
 
-import java.util.Scanner;
 import java.text.MessageFormat;
+import java.util.Scanner;
 
 public class CondicionalEjercicio_6 {
-
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int[] numbers = new int[2];
