@@ -9,4 +9,4 @@ Tiene un lector de archivos `.txt` con Javascript Vanilla utilizando la función
 hace un `fetch` del archivo al _root_ del HTML.
 Contiene estilado en CSS.
 
-Vista del sitio: <a style="color: cornflowerblue" href="https://solidsnk86.github.io/class-git/">https://solidsnk86.github.io/class-git/</a>
+Vista del sitio: <a style="color: cornflowerblue" href="https://solidsnk86.github.io/Tecnicatura_UTN/">https://solidsnk86.github.io/Tecnicatura_UTN/</a>
