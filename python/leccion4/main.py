@@ -63,3 +63,17 @@ print(cocina[:1])
 # Una tupla siempre debe contener más de un elemento y se muestra entre paréntisis, ejemplo: la coma ,
 verduras = ("🥔",)
 # De lo contario sería un str
+
+# Recorremos los elementos de una tupla
+for el in cocina:
+    print(el, end=" ")  # Evita la impresión en consola con salto de línea (\n)
+
+# Para modificar una tupla se debe usar una conversión
+cocina_lista = list(cocina)
+cocina_lista[0] = "🍳"
+cocina = tuple(cocina_lista)
+print("\n", cocina)
+
+# Eliminamos la tupla
+del cocina
+print(cocina)
