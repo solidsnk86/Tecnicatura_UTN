@@ -1,6 +1,9 @@
 import os
 import platform
 import psutil
+from colorama import init, Fore, Style
+
+init()
 
 system = platform.system()
 release = platform.release()
@@ -14,21 +17,21 @@ disk_usage = psutil.disk_usage("/")
 total_disk = round(disk_usage.total / (1024**3), 2)
 free_disk = round(disk_usage.free / (1024**3), 2)
 
-output = """|-----------------------------------------------------------|
-|           Especificaciones del Sistema Operativo          |
+output = f"""{Fore.BLUE}|-----------------------------------------------------------|
+|{Fore.LIGHTYELLOW_EX}           Especificaciones del Sistema Operativo          {Fore.BLUE}|
 |-----------------------------------------------------------|
-| Sistema Operativo  | {system:<35}  |
-| Versión            | {release:<36} |
-| Build              | {version:<36} |
-| Arquitectura       | {machine:<36} |
-| Procesador         | {processor}   |
-| Núcleos/Hilos      | {threads:<36} |
-| RAM Total          | {total_ram} GB                             |
-| RAM Disponible     | {available_ram} GB                              |
-| Disco Total        | {total_disk} GB                            |
-| Disco Libre        | {free_disk} GB                             |
-|-----------------------------------------------------------|"""
-
+|{Fore.BLUE} Sistema Operativo  | {Fore.LIGHTBLACK_EX}{system:<35}  {Fore.BLUE}|
+|{Fore.BLUE} Versión            | {Fore.LIGHTBLACK_EX}{release:<36} {Fore.BLUE}|
+|{Fore.BLUE} Build              | {Fore.LIGHTBLACK_EX}{version:<36} {Fore.BLUE}|
+|{Fore.BLUE} Arquitectura       | {Fore.LIGHTBLACK_EX}{machine:<36} {Fore.BLUE}|
+|{Fore.BLUE} Procesador         | {Fore.LIGHTBLACK_EX}{processor}   {Fore.BLUE}|
+|{Fore.BLUE} Núcleos/Hilos      | {Fore.LIGHTBLACK_EX}{threads:<36} {Fore.BLUE}|
+|{Fore.BLUE} RAM Total          | {Fore.LIGHTBLACK_EX}{total_ram} GB                             {Fore.BLUE}|
+|{Fore.BLUE} RAM Disponible     | {Fore.LIGHTBLACK_EX}{available_ram} GB                              {Fore.BLUE}|
+|{Fore.BLUE} Disco Total        | {Fore.LIGHTBLACK_EX}{total_disk} GB                            {Fore.BLUE}|
+|{Fore.BLUE} Disco Libre        | {Fore.LIGHTBLACK_EX}{free_disk:<2} GB                              {Fore.BLUE}|
+|-----------------------------------------------------------|{Style.RESET_ALL}"""
+print()
 print(
     output.format(
         system=system,
@@ -43,3 +46,4 @@ print(
         free_disk=free_disk,
     )
 )
+print()
