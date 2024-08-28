@@ -80,15 +80,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   $("form").addEventListener("submit", (e) => {
     e.preventDefault();
-    const wordCount = wordsCounter($input.value.replace(/\s+/g, ""));
+    const charCount = wordsCounter($input.value.replace(/\s+/g, ""));
     const styledText = styleText($input.value);
+    const wordsCount = $input.value.split(" ").length
     const clonedTemplate = $template.content.cloneNode(true);
 
     clonedTemplate.querySelector(
       "li"
-    ).innerHTML = `La cantidad de letras de la palabra ${styledText} es: ${wordCount}`;
+    ).innerHTML = `La cantidad de letras de la palabra ${styledText} es: ${charCount}`;
+    clonedTemplate.querySelector(
+      "p"
+    ).innerHTML = `y la cantidad de palabras es ${wordsCount}.`
 
-    saveToLocal($input.value, wordCount);
+    saveToLocal($input.value, charCount);
 
     $("#results").appendChild(clonedTemplate);
     $input.value = "";
