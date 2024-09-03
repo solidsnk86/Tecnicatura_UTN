@@ -1,3 +1,7 @@
+from colorama import init, Fore
+
+init()
+
 nombres = ["Juan Pablo", "Franco", "Maximiliano", "Elias", "Agustín", "Gabriel"]
 # print(nombres[-3])
 
@@ -199,3 +203,242 @@ tupla = (4, "Hola", 6.78, [1, 2, 3], 4, "HOLA")
 print(tupla)
 # Lo que podemos usar en las listas son: index, count, len
 # En tuplas podemos convertir de tupla a lista y de lista a tupla
+print()
+conjunto2 = set()
+conjunto1 = {
+    "bye",
+}
+conjunto2.add(7)
+print(conjunto2)
+conjunto1.add("Hola")
+print(conjunto1)
+conjunto1.add("hola")
+print(3 not in conjunto1)
+
+# Como hacer la igualdad en dos conjuntos
+print(conjunto2 == conjunto1)  # Devuelve booleano
+
+# Operaciones en conjuntos
+conjunto3 = conjunto2 | conjunto1  # Une los dos conjuntos
+print(conjunto3)
+
+# Intersección
+conjunto3 = conjunto2 & conjunto1  # Ver elementos en común
+print(conjunto3)
+
+conjunto3 = (
+    conjunto1 - conjunto2
+)  # Asigana el valor que está en el conjunto1 y no en el conjunto2
+print(conjunto3)
+
+conjunto3 = conjunto2 - conjunto1  # Vemos el conjunto2
+print(conjunto3)
+
+conjunto3 = (
+    conjunto1 ^ conjunto2
+)  # Elementos que no comparten o que son diferentes entre ambos
+print(conjunto3)
+
+conjunto3 = conjunto1 | conjunto2
+print(
+    conjunto1.issubset(conjunto3)
+)  # Preguntamos si un conjunto es un subconjunto de otro
+print(conjunto2.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+# Como saber si un conjunto son disconexos
+print(
+    conjunto3.issuperset(conjunto1)
+)  # Preguntamos si los elementos del conjunto1 estan dentro del 3
+print(
+    conjunto3.issuperset(conjunto2)
+)  # Si es verdadero quiere decir que el conjunto3 es un super conjunto
+print(conjunto1.issuperset(conjunto3))
+
+# Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en común
+print(conjunto1.isdisjoint(conjunto2))  # No hay cosas em común
+
+# Convertir un conjunto en totalmente inmutable
+conjunto1 = frozenset  # Esto hace que el conjunto sea totalmenete inmutable
+# No se puede agregar, modificar ni eliminar elementos del conjunto
+
+# Repaso Diccinarios
+diccionario_nuevo = {
+    "Azul": "Blue",
+    "Rojo": "Red",
+    "Verde": "Green",
+    "Amarillo": "Yellow",
+}
+
+print(f"Cómo se dice azul en inglés? {diccionario_nuevo['Azul']}")
+
+# Eliminar elemento
+del diccionario_nuevo["Azul"]
+print(diccionario_nuevo)
+
+# Los diccionarios pueden almacenar diferentes tipós de datos
+diccionario2 = {
+    "Gabriel": {"Edad": 38, "Altura": 1.70},
+    "Agustin": [30, 1.86],
+    "Natalia": [35, 1.67],
+}
+print(diccionario2["Gabriel"]["Edad"])
+
+seleccion_argentina = {
+    1: {
+        "Nombre": "Emiliano Martínez",
+        "Edad": 31,
+        "Altura": 1.95,
+        "Precio": "28 Millones",
+        "Posición": "Portero",
+        "Número": 23,
+    },
+    2: {
+        "Nombre": "Nahuel Molina",
+        "Edad": 26,
+        "Altura": 1.75,
+        "Precio": "25 Millones",
+        "Posición": "Lateral Derecho",
+        "Número": 4,
+    },
+    3: {
+        "Nombre": "Nicolás Otamendi",
+        "Edad": 36,
+        "Altura": 1.83,
+        "Precio": "5 Millones",
+        "Posición": "Defensa Central",
+        "Número": 19,
+    },
+    4: {
+        "Nombre": "Cristian Romero",
+        "Edad": 26,
+        "Altura": 1.85,
+        "Precio": "60 Millones",
+        "Posición": "Defensa Central",
+        "Número": 13,
+    },
+    5: {
+        "Nombre": "Nicolás Tagliafico",
+        "Edad": 31,
+        "Altura": 1.72,
+        "Precio": "12 Millones",
+        "Posición": "Lateral Izquierdo",
+        "Número": 3,
+    },
+}
+
+# Recorrer los elementos
+for key, value in seleccion_argentina.items():
+    print(key, value)
+
+# Cantidad de juadores
+print()
+print(f"Tenemos cargado la cantindad de jugadores: {len(seleccion_argentina)}")
+
+# Agregamos juagadores
+seleccion_argentina[6] = {
+    "Nombre": "Rodrigo De Paul",
+    "Edad": 30,
+    "Altura": 1.80,
+    "Precio": "45 Millones",
+    "Posición": "Centrocampista",
+    "Número": 7,
+}
+
+seleccion_argentina[7] = {
+    "Nombre": "Enzo Fernández",
+    "Edad": 23,
+    "Altura": 1.78,
+    "Precio": "100 Millones",
+    "Posición": "Centrocampista",
+    "Número": 24,
+}
+
+
+print()
+print(f"Ahora están llegando más jugadores a la cancha: {len(seleccion_argentina)}")
+print("Vamos a agregar de varios jugadores ahora!")
+
+nuevos_jugadores = [
+    {
+        "Nombre": "Alexis Mac Allister",
+        "Edad": 25,
+        "Altura": 1.74,
+        "Precio": "70 Millones",
+        "Posición": "Centrocampista Ofensivo",
+        "Número": 20,
+    },
+    {
+        "Nombre": "Ángel Di María",
+        "Edad": 36,
+        "Altura": 1.80,
+        "Precio": "10 Millones",
+        "Posición": "Extremo Derecho",
+        "Número": 11,
+    },
+    {
+        "Nombre": "Lionel Messi",
+        "Edad": 37,
+        "Altura": 1.70,
+        "Precio": "50 Millones",
+        "Posición": "Extremo Derecho",
+        "Número": 10,
+    },
+    {
+        "Nombre": "Julián Álvarez",
+        "Edad": 24,
+        "Altura": 1.70,
+        "Precio": "90 Millones",
+        "Posición": "Delantero Centro",
+        "Número": 9,
+    },
+]
+
+for jugador in nuevos_jugadores:
+    seleccion_argentina[len(seleccion_argentina) + 1] = jugador
+
+print(seleccion_argentina)
+print(
+    "--------------------------------------------------------------------------------------------------"
+)
+print(
+    f"Bien ahora tenemos el equipo completo Macalla!!: Tenenmos a los {len(seleccion_argentina)} jugadores de nuestra selección."
+)
+
+# Método con listas llamado PILAS
+
+pila = [1, 2, 3]
+
+# Agregar elementos en la fila por el final
+pila.append(4)
+print(pila)
+
+# Sacando elementos por el final
+elemento_borrado = pila.pop()  # Quita el último elemento de la lista
+print(f"Sacamos el último elemento de la pila: {elemento_borrado}")
+print(f"La pila quedó así: {pila}")
+
+pila_nuevas = [4, 5, 6, 7, 8, 9]
+
+for n in pila_nuevas:
+    pila.append(n)
+
+print(pila)
+
+# Colas con listas
+# Estructura de datos FIFO(First input / First output)
+cola = ["Juan Pablo", "Franco"]
+print(f"Ingrentes del grupo: {cola}")
+# Agregamos un compis
+cola.append("Maximiliano")
+print(f"Ahora el grupo quedó así: {cola}")
+compis_nuevos = ["Elias", "Agustín", "Gabriel"]
+
+for compis in compis_nuevos:
+    cola.append(compis)
+
+print(f"{Fore.GREEN}Integrantes del grupo Terreneitor: {Fore.LIGHTYELLOW_EX}{cola}")
+soldado_caido = cola.pop(0)
+print(f"Un soldado caído: {Fore.BLUE}{soldado_caido}{Fore.WHITE}")
+print(f"{Fore.GREEN}Soldados firmes: {Fore.MAGENTA}{cola}")
