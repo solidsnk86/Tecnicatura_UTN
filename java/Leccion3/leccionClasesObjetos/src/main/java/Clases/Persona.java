@@ -3,6 +3,12 @@ package Clases;
 
 public class Persona {
     // Atributos clase (Característica)
-    string nombre;
-    string apellido;            
+    String nombre;
+    String apellido;      
+    
+    // Métodos de la clase
+    public void obtenerInformacion() {
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Apellido: "+ apellido);
+}
 }
