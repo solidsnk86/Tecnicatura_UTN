@@ -9,11 +9,6 @@
   "python.analysis.autoFormatStrings": true,
   "liveServer.settings.port": 5501,
   "editor.fontLigatures": true,
-  "java.format.enabled": true,
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java",
-    "editor.formatOnSave": true
-  },
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
     "gitlens.codeLens.symbolScopes": ["!Module"],
