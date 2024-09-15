@@ -12,6 +12,7 @@ public class EjercicioCiclos08 {
         Scanner entrada = new Scanner(System.in);
         System.out.println("Digite un número: ");
         int num = Integer.parseInt(entrada.nextLine());
+        System.out.println();
         int i = 1;
 
         while (i <= num) {
