@@ -26,13 +26,13 @@ while True:
     menu()
     num = int(input("Digite una opción del menú: "))
     if num == 1:
-        temp = int(
+        temp = float(
             input("Ingrese una temperatura para convertir de celsius a farenheit: ")
         )
         resultado = celsius_to_farenheit(temp)
         print(f"\nLa temperatura {temp}°C es {resultado:.2f}°F")
     elif num == 2:
-        temp = int(
+        temp = float(
             input("Ingrese una temperatura para convertir de farenheit a celsius: ")
         )
         resultado = farenheit_to_celsius(temp)
