@@ -8,9 +8,26 @@ class Persona {
   get nombre() {
     return this._nombre;
   }
-
+  get apellido() {
+    return this._apellido;
+  }
+  /**
+   * @param {string} nombre
+   */
   set nombre(nombre) {
     this._nombre = nombre;
+  }
+  /**
+   * @param {string} apellido
+   */
+  set apellido(apellido) {
+    this._apellido = apellido;
+  }
+  /**
+   * @param {number} edad
+   */
+  set edad(edad) {
+    this._edad = edad;
   }
 }
 
@@ -23,3 +40,6 @@ let persona2 = new Persona("Carlos", "Agustin", 30);
 console.log(persona2);
 persona2.nombre = "Maria Laura";
 console.log(persona2.nombre);
+console.log(persona1.apellido);
+persona2.edad = 38
+console.log(persona2._edad)
