@@ -1,13 +1,22 @@
 class Persona:  # Creamos una clase
     # pass  # No se procesa nada más (No tiene contenido)
-    def __init__(self):
-        self.nombre = "Juan"
-        self.apeelido = "Meza"
-        self.edad = 75
+    def __init__(self, nombre, apellido, edad):
+        self.nombre = nombre
+        self.apellido = apellido
+        self.edad = edad
 
 
-persona1 = Persona()
+persona1 = Persona("Manuel", "Calavera", 369)
+print(
+    f"El objeto1 de la clase Persona: {persona1.nombre}, {persona1.apellido}, {persona1.edad} años"
+)
 
 print(persona1.nombre)
-print(persona1.apeelido)
+print(persona1.apellido)
 print(persona1.edad, "años")
+
+
+persona2 = Persona("Goro", "MK", 1000)
+print(
+    f"El objeto2 de la clase persona: {persona2.nombre}, {persona2.apellido}, {persona2.edad} años"
+)
