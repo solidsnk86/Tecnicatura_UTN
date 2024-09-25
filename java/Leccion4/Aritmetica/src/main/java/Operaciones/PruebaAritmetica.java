@@ -25,10 +25,24 @@ public class PruebaAritmetica {
         System.out.println("aritmetica2 a ="+ aritmetica2.a);
         System.out.println("aritmetica2 b ="+ aritmetica2.b);
         // System.gc(); Garbage Colector - Método para limpiar residuos NO UTILIZAR
+        Persona persona = new Persona("Carlos", "Reuteman");
+        System.out.println("persona: " + persona);
+        System.out.println("Persona nombre: " + persona.nombre);
+        System.out.println("Persona apellido: " + persona.apellido);
     }
     
     public static void miMetodo() {
         //int a = 10; // Una variable está limitada
         System.out.println("Aqui hay otro método");
+    }
+}
+// Modularidad creamos un nuevo métdodo
+class Persona {
+    String nombre;
+    String apellido;
+    
+    Persona(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
 }
