@@ -11,9 +11,20 @@ public class EjercicioCiclos11 {
 
     public static void main(String[] args) {
         long resultado = 1;
-        for (int i = 1; i <= 20; i+=2) {
-            resultado *= i;
+        long num = 0;
+        int impar = 1;
+
+        num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número: "));
+        while (impar <= 9) {
+            num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese otro número: "));
+
+            if (num % 2 != 0) {
+                impar++;
+                resultado *= num;
+            }
+
         }
-        JOptionPane.showMessageDialog(null, "El producto de los 10 primeros números impares es: "+resultado);
+        JOptionPane.showMessageDialog(null, "El resultado de los primeros " + impar + " números impares es " + resultado);
+
     }
 }
