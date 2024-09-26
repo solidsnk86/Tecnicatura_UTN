@@ -83,7 +83,6 @@ function recorrerArrays(arr1, arr2) {
     if (j % arr1.length === arr2.length) {
       hash += "_";
     }
-    console.log(Math.random(hash));
   }
 }
 recorrerArrays(array1, array2);
