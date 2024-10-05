@@ -1,6 +1,8 @@
 class Persona:  # Creamos una clase
     # pass  # No se procesa nada más (No tiene contenido)
-    def __init__(self, nombre, apellido, edad):  # Se lo llama método Init Dunder
+    def __init__(
+        self, nombre, apellido, edad
+    ):  # Se lo llama método Init Dunder (Double underscore)
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
