@@ -11,12 +11,15 @@ class Aritmetica:
     def sumar(self):
         return self.a + self.b
 
+    # Método para restar
     def restar(self):
         return self.a - self.b
 
+    # Método para dividir
     def dividir(self):
         return self.a / self.b
 
+    # Método para multiplicar
     def multiplicar(self):
         return self.a * self.b
 
