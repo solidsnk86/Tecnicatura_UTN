@@ -1,6 +1,6 @@
 class Persona:  # Creamos una clase
     # pass  # No se procesa nada más (No tiene contenido)
-    def __init__(self, nombre, apellido, edad):
+    def __init__(self, nombre, apellido, edad):  # Se lo llama método Init Dunder
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
@@ -33,4 +33,12 @@ print(
 
 # Los atributos son: características
 # Los métodos son: el comportamiento que van a tener los objetos (acciones)
-persona1.mostrar_detalle()
+persona1.mostrar_detalle()  # La referencia se pasa de manera automática
+
+# Persona.mostrar_detalle() Debemos pasarle una referencia para el self o dará error
+persona1.telefono = "2654989966"  # Hemos creado un atributo de un objeto
+print(f"Este es el teléfono {persona1.telefono} de {persona1.nombre}")
+
+print(
+    persona2.telefono
+)  # Esto nos dará error, el objeto persona2 no tiene este atributo
