@@ -1,9 +1,9 @@
 <diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>370</x><y>50</y><w>210</w><h>220</h></coordinates><panel_attributes>&lt;&lt;Persona&gt;&gt;
 --
-nombre: String
-genero: String
-edad: int
-direccion: String
+-nombre: String
+-genero: String
+-edad: int
+-direccion: String
 --
 +getNombre(): Str
 +setNombre(String): void
