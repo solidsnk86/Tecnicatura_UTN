@@ -1,9 +1,14 @@
 class Persona {
+  static contadorObjetosPersona = 0;
   // clase padre (Object)
   constructor(nombre, apellido, edad) {
     this._nombre = nombre;
     this._apellido = apellido;
     this._edad = edad;
+    Persona.contadorObjetosPersona++;
+    console.log(
+      `Se implementa el contador : ${Persona.contadorObjetosPersona}`
+    );
   }
 
   get nombre() {
@@ -39,6 +44,14 @@ class Persona {
     // Se aplica el polimorfismo que significa: múltiples formas en tienpo de ejecución
     // El método que se ejecuta depende si es una referencia de tipo padre o hija
     return this.nombreCompleto();
+  }
+
+  static saludar() {
+    console.log(`Hola desde el método static`);
+  }
+
+  static saludar2(persona) {
+    console.log(persona.nombre + " " + persona.apellido);
   }
 }
 // Herencias de clases
@@ -83,3 +96,11 @@ console.log(empleado1.nombreCompleto());
 // Object.prototype.toString; Esta es la manera de acceder a los atributos y métodos de manera dinámica
 console.log(empleado1.toString()); // Polimorfismo
 console.log(persona1.toString());
+
+Persona.saludar();
+Persona.saludar2(persona1);
+Empleado.saludar();
+Empleado.saludar2(empleado1);
+
+console.log(Persona.contadorObjetosPersona);
+console.log(Empleado.contadorObjetosPersona);
