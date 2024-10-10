@@ -2,20 +2,21 @@ package domain;
 
 import java.util.Date;
 
-public class Cliente {
-    private static int idCliente;
+public class Cliente extends Persona {
 
+    private int idCliente;
+    private static int contadorCliente;
+    
     public static int getIdCliente() {
-        return idCliente;
+        return Cliente.contadorCliente;
     }
-
-    public static void setIdCliente(int aIdCliente) {
-        idCliente = aIdCliente;
-    }
+    
     private Date fechaRegistro;
     private boolean vip;
 
-    public Cliente(Date fechaRegistro, boolean vip) {
+    public Cliente(Date fechaRegistro, boolean vip, String nombre, char genero, int edad, String direccion) {
+        super(nombre, genero, edad, direccion);
+        this.contadorCliente = ++Cliente.contadorCliente;
         this.fechaRegistro = fechaRegistro;
         this.vip = vip;
     }
@@ -35,7 +36,17 @@ public class Cliente {
     public void setVip(boolean vip) {
         this.vip = vip;
     }
-    
-    
-            
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Cliente{");
+        sb.append("idCliente=").append(idCliente);
+        sb.append(", fechaRegistro=").append(fechaRegistro);
+        sb.append(", vip=").append(vip);
+        sb.append(", ").append(super.toString());
+        sb.append('}');
+        return sb.toString();
+    }
+
 }
