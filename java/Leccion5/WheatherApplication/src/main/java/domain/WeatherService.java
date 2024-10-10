@@ -7,8 +7,8 @@ import java.net.http.HttpResponse;
 import org.json.JSONObject;
 
 public class WeatherService {
-
-    private static final String API_KEY = "2232101b7a4c133da51de8620fc86462";
+    // Para obtener la api key aqui https://openweathermap.org/
+    private static final String API_KEY = "";
     private HttpClient client;
 
     public WeatherService() {
@@ -32,7 +32,6 @@ public class WeatherService {
             double temperature = json.getJSONObject("main").getDouble("temp");
             int humidity = json.getJSONObject("main").getInt("humidity");
 
-            // Devolver los datos en formato legible
             return "Clima en " + city.replaceAll("%20", " ").toUpperCase() + ":\n"
                     + "Descripción: " + this.translate(weatherDescription) + "\n"
                     + "Temperatura: " + temperature + "°C\n"

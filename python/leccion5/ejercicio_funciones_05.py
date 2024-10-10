@@ -6,12 +6,12 @@ Investigar las fórmulas
 """
 
 
-def celsius_to_farenheit(temp):
-    return (temp * 1.8) + 32
+class Conversor:
+    def celsius_to_farenheit(self):
+        return (temp * 1.8) + 32
 
-
-def farenheit_to_celsius(temp):
-    return (temp - 32) / 1.8
+    def farenheit_to_celsius(self):
+        return (temp - 32) / 1.8
 
 
 def menu():
@@ -29,13 +29,13 @@ while True:
         temp = float(
             input("Ingrese una temperatura para convertir de celsius a farenheit: ")
         )
-        resultado = celsius_to_farenheit(temp)
+        resultado = Conversor.celsius_to_farenheit(temp)
         print(f"\nLa temperatura {temp}°C es {resultado:.2f}°F")
     elif num == 2:
         temp = float(
             input("Ingrese una temperatura para convertir de farenheit a celsius: ")
         )
-        resultado = farenheit_to_celsius(temp)
+        resultado = Conversor.farenheit_to_celsius(temp)
         print(f"\nLa temperatura {temp}°F es {resultado:.2f}°C")
     elif num == 3:
         print("\nHa salido del conversor.")
