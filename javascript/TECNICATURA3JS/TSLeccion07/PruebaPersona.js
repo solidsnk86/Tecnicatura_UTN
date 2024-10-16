@@ -99,6 +99,7 @@ class Cliente extends Persona {
       minute: "2-digit",
       second: "2-digit",
     });
+    
     return fecha;
   }
 
