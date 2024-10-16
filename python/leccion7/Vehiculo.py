@@ -21,7 +21,7 @@ class Vehiculo:
         self._ruedas = ruedas
 
     def __str__(self) -> str:
-        return f"Vehículo:[ Color: {self._color}, Ruedas: {self._ruedas} ]"
+        return f"Vehículo:[ Color: {self._color}, {str(self._ruedas)} ruedas ]"
 
 
 class Auto(Vehiculo):
