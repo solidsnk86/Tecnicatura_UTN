@@ -1,4 +1,8 @@
-class FiguraGeometrica:
+from abc import ABC, abstractmethod
+
+
+# ABC: significa Abstract Base Class, convierte una clase a abstracta
+class FiguraGeometrica(ABC):
     def __init__(self, ancho, alto):
         if self._validar_valores(ancho):
             self._ancho = ancho
@@ -15,6 +19,7 @@ class FiguraGeometrica:
     def ancho(self):
         return self._ancho
 
+    # Para que sea un atributo Read-Only se deberían eliminar los métodos setters
     @ancho.setter
     def ancho(self, ancho):
         if self._validar_valores(ancho):
@@ -32,6 +37,10 @@ class FiguraGeometrica:
             self._alto = alto
         else:
             print(f"Valor erróneo alto {alto}.")
+
+    @abstractmethod
+    def calcular_area(self):
+        pass
 
     def __str__(self) -> str:
         return f"Figura Geométrica: [Ancho {self._ancho}, Alto: {self._alto}]"
