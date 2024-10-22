@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light dark;
+}
+main {
+  display: grid;
+  justify-content: center;
+  margin: 50px auto;
+}
+
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 4px;
+}
