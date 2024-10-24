@@ -54,12 +54,14 @@ agregarBtn.addEventListener("click", () => {
     return alert("Por favor, ingrese todos los datos correctamente.");
 
   const producto = new Producto(nombre, precio);
+  const orden = new Orden();
+  orden.agregarProductos(producto);
   const nuevoProducto = {
     id: producto.id,
     nombre: producto._nombre,
     precio: Number(producto._precio),
     cantidad: cantidad,
-    total: Number(producto._precio + producto._precio),
+    total: orden.calculatTotal(),
   };
 
   // Agregar el nuevo producto al array
@@ -83,17 +85,17 @@ resetBtn.addEventListener("click", () => {
   localStorage.clear();
 });
 
-const producto = new Producto("Memoria RAM", 34600);
-const producto2 = new Producto("CPU Ryzen 9", 657030);
-const producto3 = new Producto("Placa Madre", 275050);
-const produto4 = new Producto("Gabinete", 87000);
-const produto5 = new Producto("Disco SSD 240GB", 82000);
-const produto6 = new Producto("Cooler", 45000);
-const orden = new Orden();
-orden.agregarProductos(producto);
-orden.agregarProductos(producto2);
-orden.agregarProductos(producto3);
-orden.agregarProductos(produto4);
-orden.agregarProductos(produto5);
-orden.agregarProductos(produto6);
-orden.mostarOrden();
+// const producto1 = new Producto("Memoria RAM", 34600);
+// const producto2 = new Producto("CPU Ryzen 9", 657030);
+// const producto3 = new Producto("Placa Madre", 275050);
+// const producto4 = new Producto("Gabinete", 87000);
+// const producto5 = new Producto("Disco SSD 240GB", 82000);
+// const producto6 = new Producto("Cooler", 45000);
+// const orden = new Orden();
+// orden.agregarProductos(producto1);
+// orden.agregarProductos(producto2);
+// orden.agregarProductos(producto3);
+// orden.agregarProductos(producto4);
+// orden.agregarProductos(producto5);
+// orden.agregarProductos(producto6);
+// orden.mostarOrden();
