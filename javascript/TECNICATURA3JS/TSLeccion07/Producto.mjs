@@ -1,6 +1,7 @@
-class Producto {
+export class Producto {
   static idProducto = 0;
   static contadorProducto = 0;
+  static precioProducto = 0;
 
   static contadorProductos() {
     return ++Producto.contadorProducto;
@@ -18,11 +19,11 @@ class Producto {
   }
 
   get nombre() {
-    return this.nombre;
+    return this._nombre;
   }
 
   get precio() {
-    return this.precio;
+    return this._precio;
   }
 
   set nombre(nombre) {
@@ -37,9 +38,3 @@ class Producto {
     return `Producto: [ ID: ${this.id} Nombre: ${this._nombre} Precio: $${this._precio} ]`;
   }
 }
-
-let producto1 = new Producto("Velador", 1500);
-console.log(producto1.toString());
-let producto2 = new Producto("Heladera", 800600);
-console.log(producto2.toString());
-console.log(Producto.contadorProducto);

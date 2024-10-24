@@ -21,4 +21,16 @@ function solution(matrix) {
   return matrix;
 }
 
+function showName({ name, lastName, age }) {
+  return console.log(`Mi nombre es: ${name} ${lastName}, Edad: ${age}`);
+}
+
 console.log(solution(matrix));
+
+const fullName = {
+  name: "Gabriel",
+  lastName: "Calcagni",
+  age: 38,
+};
+
+showName(fullName);

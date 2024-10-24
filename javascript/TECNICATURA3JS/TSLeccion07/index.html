@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema de Ventas</title>
     <script src="VentasTest.mjs" type="module"></script>
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css" />    
   </head>
   <body>
     <main>
@@ -19,8 +19,15 @@
           </tr>
           <tbody id="cuerpo-productos"></tbody>
         </thead>
+        <td></td>
+        <td></td>
+        <th>Total:</th>
+        <td id="total"></td>
       </table>
-      <button id="agregar-producto">Agregar Producto</button>
+      <div>
+        <button id="agregar-producto">Agregar Producto</button>
+        <button id="reset">Resetear</button>
+      </div>
     </main>
   </body>
 </html>

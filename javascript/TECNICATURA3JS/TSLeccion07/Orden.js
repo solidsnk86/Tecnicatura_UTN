@@ -1,14 +1,23 @@
-class Orden extends Producto {
-    static idOrden = 0;
-    static contadorOrdenes = 0;
-    static MAX_PRODUCTOS = 5;
+export class Orden {
+  static idOrden = 0;
+  static MAX_PRODUCTOS = 5;
 
-    static contadorProductosAgregados() {
-        return ++Orden.contadorOrdenes;
-    }
+  constructor() {
+    this._idOrden = ++Orden.idOrden;
+    this._productos = [];
+    Orden.contadorProductosAgregados();
+    this._contadorProductosAgregados = 0;
+  }
 
-    constructor() {
-        this._idOrden = ++Orden.idOrden
-        
+  get idOrden() {
+    return this._idOrden;
+  }
+
+  agregarProductos(producto) {
+    if (this._productos.length < Orden.MAX_PRODUCTOS) {
+      this._productos.push(producto);
+    } else {
+      console.log(`Máximo de productos ${Orden.MAX_PRODUCTOS}`);
     }
+  }
 }

@@ -99,7 +99,7 @@ class Cliente extends Persona {
       minute: "2-digit",
       second: "2-digit",
     });
-    
+
     return fecha;
   }
 
@@ -116,7 +116,17 @@ const persona2 = new Persona("Carlos", "Meza", 69);
 console.log(persona2.toString());
 const empleado = new Empleado("Agustín", "Calcagni", 30, 369000);
 console.log(empleado.toString());
-const cliente = new Cliente("Juan Carlos", "Meza", 69, new Date());
+const cliente = new Cliente(
+  "Juan Carlos",
+  "Meza",
+  69,
+  new Date().toLocaleDateString()
+);
 console.log(cliente.toString());
-const cliente1 = new Cliente("Norma", "Leandro", 123, new Date());
+const cliente1 = new Cliente(
+  "Norma",
+  "Leandro",
+  123,
+  new Date().toLocaleDateString()
+);
 console.log(cliente1.toString());
