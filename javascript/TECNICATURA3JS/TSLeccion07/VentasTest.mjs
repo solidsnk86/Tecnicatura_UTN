@@ -1,3 +1,4 @@
+import { Orden } from "./Orden.mjs";
 import { Producto } from "./Producto.mjs";
 
 const cuerpoProductos = document.querySelector("#cuerpo-productos");
@@ -33,6 +34,7 @@ const loadProducts = () => {
 
 // Cargar los productos al inicio
 let productos = loadProducts();
+
 productos.forEach((producto) => {
   cuerpoProductos.innerHTML += createContent(
     producto.id,
@@ -80,3 +82,18 @@ resetBtn.addEventListener("click", () => {
   location.reload();
   localStorage.clear();
 });
+
+const producto = new Producto("Memoria RAM", 34600);
+const producto2 = new Producto("CPU Ryzen 9", 657030);
+const producto3 = new Producto("Placa Madre", 275050);
+const produto4 = new Producto("Gabinete", 87000);
+const produto5 = new Producto("Disco SSD 240GB", 82000);
+const produto6 = new Producto("Cooler", 45000);
+const orden = new Orden();
+orden.agregarProductos(producto);
+orden.agregarProductos(producto2);
+orden.agregarProductos(producto3);
+orden.agregarProductos(produto4);
+orden.agregarProductos(produto5);
+orden.agregarProductos(produto6);
+orden.mostarOrden();
