@@ -21,8 +21,10 @@ function solution(matrix) {
   return matrix;
 }
 
-function showName({ name, lastName, age }) {
-  return console.log(`Mi nombre es: ${name} ${lastName}, Edad: ${age}`);
+function showName({ ...obj }) {
+  return console.log(
+    `Mi nombre es: ${obj.name} ${obj.lastName}, Edad: ${obj.age}`
+  );
 }
 
 console.log(solution(matrix));
