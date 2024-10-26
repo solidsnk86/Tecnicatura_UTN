@@ -63,13 +63,13 @@ public class Matriz_Ejercicio_5 {
 
         System.out.println("\nLa suma de las filas es: ");
         for (int i = 0; i < nFilas; i++) {
-            System.out.println(filas[i] + " - ");
+            System.out.print(filas[i] + " - ");
         }
         System.out.println("");
 
         System.out.println("\nLa suma de las columnas es: ");
         for (int i = 0; i < nColumnas; i++) {
-            System.out.println(columnas[i] + " - ");
+            System.out.print(columnas[i] + " - ");
         }
         System.out.println("");
     }
