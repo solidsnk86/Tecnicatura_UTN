@@ -4,8 +4,6 @@
  */
 package matriz_ejercicio_4;
 
-import javax.swing.JOptionPane;
-
 public class Matriz_Ejercicio_4 {
 
     public static void main(String[] args) {
