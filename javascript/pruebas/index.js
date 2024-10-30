@@ -17,4 +17,4 @@ const getData = async () => {
 
 const csv = await getData();
 
-console.log(csv.map((p) => p.persona))
+console.log(csv.map((neo) => neo.ciudad))
