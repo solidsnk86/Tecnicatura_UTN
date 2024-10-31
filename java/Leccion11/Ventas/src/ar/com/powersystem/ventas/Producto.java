@@ -1,15 +1,16 @@
 package ar.com.powersystem.ventas;
 
 public class Producto {
+
     private int idProducto;
     private String nombre;
     private double precio;
     private static int contadorProductos;
-    
+
     private Producto() {
         this.idProducto = ++Producto.contadorProductos;
     }
-    
+
     public Producto(String nombre, double precio) {
         this(); // Llamamos al constructor vacío
         this.nombre = nombre;
@@ -38,10 +39,7 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" + "idProducto=" + idProducto + ", nombre=" + nombre + ", precio=" + precio + '}';
+        return "Producto { " + "idProducto = " + idProducto + ", nombre = " + nombre + ", precio = $" + precio + " }";
     }
-    
-    
-    
-    
+
 }
