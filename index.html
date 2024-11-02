@@ -8,13 +8,18 @@
       href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/UTN_logo.jpg/270px-UTN_logo.jpg"
       type="image/x-icon"
     />
-    <title>Tabla de distribución normal N(0,1)</title>
+    <title>Tabala de Distribución</title>
     <style>
       :root {
         color-scheme: light dark;
       }
+      h1 {
+        text-align: center;
+      }
       table {
-        width: 100%;
+        margin: 50px auto;
+        max-width: 572px;
+        justify-content: center;
         border-collapse: collapse;
         font-family: Arial, sans-serif;
         margin-top: 20px;
@@ -44,10 +49,20 @@
         color: #333;
         font-weight: 500;
       }
+      @media (width < 400px) {
+        body {
+          overflow: hidden;
+          overflow-x: auto;
+        }
+        table {
+          padding: 10px;
+        }
+      }
     </style>
     <script src="src/probabilidades.js" type="module"></script>
   </head>
   <body>
+    <h1>Tabla de distribución normal N(0,1)</h1>
     <table>
       <thead>
         <tr>
