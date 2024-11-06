@@ -14,6 +14,22 @@ class Computadora:
         self._teclado = teclado
         self._raton = raton
 
+    @property
+    def nombre(self) -> str:
+        return self._nombre
+
+    @nombre.setter
+    def nombre(self, nombre) -> str:
+        self._nombre = nombre
+
+    @property
+    def monitor(self) -> str:
+        return self._monitor
+
+    @monitor.setter
+    def monitor(self, monitor) -> str:
+        self._monitor = monitor
+
     def __str__(self):
         return f"""
         {self._nombre}: {self._id_computadora}
@@ -21,16 +37,3 @@ class Computadora:
         Teclado: {self._teclado}
         Ratón: {self._raton}
         """
-
-
-if __name__ == "__main__":
-    monitor1 = Monitor("HP", "24 pulgadas")
-    teclado1 = Teclado("HP", "USB")
-    raton1 = Raton("HP", "Bluetooth")
-    computadora1 = Computadora("HP", monitor1, teclado1, raton1)
-    print(computadora1)
-    monitor2 = Monitor("Acer", "19 pulgadas")
-    teclado2 = Teclado("Acer", "USB")
-    raton2 = Raton("Acer", "USB")
-    computadora2 = Computadora("Acer", monitor1, teclado1, raton1)
-    print(computadora2)

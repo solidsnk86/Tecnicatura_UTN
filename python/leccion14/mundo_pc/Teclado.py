@@ -17,6 +17,14 @@ class Teclado(DispositivoEntrada):
     def marca(self, marca) -> str:
         self._marca = marca
 
+    @property
+    def tipo_entrada(self) -> str:
+        return self._tipo_entrada
+
+    @tipo_entrada.setter
+    def tipo_entrada(self, tipo_entrada) -> str:
+        self._tipo_entrada = tipo_entrada
+
     def __str__(self) -> str:
         return f"Id: {self._id_teclado}, Marca: {self._marca}, Tipo de Entrada: {self._tipo_entrada}"
 

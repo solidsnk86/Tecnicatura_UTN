@@ -44,7 +44,6 @@ Responsabilidades
 --
 +agregar_computadora(Computadora)
 +__str__()
-+(agregar métodos set/get de cada atributo)
 --
 Responsabilidades
 Almacenar una lista de objetos de tipo computadora
