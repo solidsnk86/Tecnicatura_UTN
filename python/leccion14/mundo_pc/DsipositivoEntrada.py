@@ -10,6 +10,8 @@ class DispositivoEntrada:
     @marca.setter
     def marca(self, marca) -> str:
         self._marca = marca
+        
+    
 
     def __str__(self) -> str:
         return f"Dispositivo de Entrada: {self._marca}, Tipo: {self._tipo_entrada}"
