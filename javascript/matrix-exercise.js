@@ -21,7 +21,7 @@ function solution(matrix) {
   return matrix;
 }
 
-function showName({ ...obj }) {
+function showName(obj) {
   return console.log(
     `Mi nombre es: ${obj.name} ${obj.lastName}, Edad: ${obj.age}`
   );
@@ -36,3 +36,43 @@ const fullName = {
 };
 
 showName(fullName);
+
+let position = []
+
+function ghostMatrix(matrix) {
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i].length; j++) {
+      const currentPosition = j;
+      if (matrix[i][j] === 0) {
+        matrix[i][j] = "👻";
+        position.push(currentPosition)
+      }
+    }
+  }
+  return matrix;
+}
+
+const matrix1 = [
+  [0, 2, 3, 4, 5, 6],
+  [2, 4, 7, 8, 4, 0],
+  [1, 0, 3, 4, 6, 9],
+];
+const mat = ghostMatrix(matrix1)
+const result = position.forEach((pos, i) => {
+  console.log(`El ${i + 1}° 👻 se encuentra en la posición ${pos}`)
+})
+
+
+function humanVsZombies(humans, zombies) {
+  let h = 0, z = 0;
+
+  for (let i = 0; i < humans.length; i++) {
+    h += Number(humans[i])
+    z += Number(zombies[i])
+  }
+  if (h === z) return 'x'
+  return `${Math.abs(h - z)}${h > z ? 'h' : 'z'}`
+}
+const zombies = '243'
+const humanos = '313'
+console.log(humanVsZombies(humanos, zombies))

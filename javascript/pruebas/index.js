@@ -15,6 +15,20 @@ const getData = async () => {
   return formatCsv;
 };
 
-const csv = await getData();
+// window.addEventListener("blur", async () => {
+//   console.log("Se ha cerrado la ventana, o se ha minimizado.");
+// });
+// window.addEventListener("focus", () => {
+//   if (document.hasFocus()) {
+//     console.log("El usuario ha vuelto a la ventana.");
+//   }
+// });
 
-console.log(csv.map((neo) => neo.ciudad))
+// También podemos usar el evento visibilitychange que es más preciso
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) {
+    console.log("La página está oculta");
+  } else {
+    console.log("La página está visible");
+  }
+});
