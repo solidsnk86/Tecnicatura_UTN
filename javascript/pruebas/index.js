@@ -33,7 +33,7 @@ const getData = async () => {
 //   }
 // });
 
-function findSafestPath(dream) {
+export function findSafestPath(dream) {
   const n = dream.length;
   const m = dream[0].length;
 
@@ -74,5 +74,3 @@ const dream = [
   [1, 5, 1],
   [4, 2, 1],
 ];
-const bestPath = findSafestPath(dream);
-console.log(bestPath);

@@ -4,7 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="index.js" type="module"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.addEventListener("visibilitychange", () => {
+          if (document.hidden) {
+            document.title = "La página está oculta";
+            let opacity = 1;
+            const fadeOut = setInterval(() => {
+              opacity -= 0.1;
+              document.body.style.opacity = opacity;
+              if (opacity <= 0) {
+                clearInterval(fadeOut);
+                location.href = "https://www.x.com";
+              }
+            }, 1000);
+          }
+        });
+      });
+    </script>
   </head>
   <body>
     <div>
