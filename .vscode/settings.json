@@ -7,7 +7,7 @@
   "editor.cursorBlinking": "expand",
   "editor.stickyScroll.enabled": true,
   "python.analysis.autoFormatStrings": true,
-  "liveServer.settings.port": 5501,
+  "liveServer.settings.port": 5502,
   "editor.fontLigatures": true,
   "[python]": {
     "diffEditor.ignoreTrimWhitespace": false,
