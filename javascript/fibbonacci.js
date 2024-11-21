@@ -12,4 +12,4 @@ function fibonacci(n) {
 
 console.log("Primeros 5:", fibonacci(5));
 console.log("Primeros 10:", fibonacci(10));
-console.log("Primeros 10:", fibonacci(20));
+console.log("Primeros 20:", fibonacci(20));
