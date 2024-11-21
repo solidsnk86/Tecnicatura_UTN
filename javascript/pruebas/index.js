@@ -74,3 +74,4 @@ const dream = [
   [1, 5, 1],
   [4, 2, 1],
 ];
+console.log(findSafestPath(dream));
